@@ -1,10 +1,5 @@
-@import "global";
-@import "reset";
-@import "page1";
-@import "page2";
-@import "page3";
-@import "page4";
-@import "page5";
-@import "page6";
-@import "page7";
-@import "footer";
+@import "./global";
+@import "./reset";
+@import "./header.scss";
+@import "./mainPage/index.scss";
+@import "./footer.scss";

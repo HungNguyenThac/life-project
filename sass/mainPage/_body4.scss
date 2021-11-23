@@ -1,4 +1,5 @@
-@import "variables";
+@import "../variables";
+
 .page4 {
   width: 100%;
   height: 930px;
@@ -41,7 +42,7 @@
     font-size: 64px;
     line-height: calc(85 / 64);
     text-align: left;
-    color: $title-color;
+    color: $grey-color;
   }
 
   &__subTitle {

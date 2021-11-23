@@ -1,0 +1,43 @@
+.header {
+  padding: 48px 0px 0 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  &__menu {
+    z-index: 9999;
+    cursor: pointer;
+
+    & path {
+      transition: all 0.2s linear;
+    }
+
+    & circle:nth-child(3),
+    circle:nth-child(4),
+    circle:nth-child(5),
+    circle:nth-child(6),
+    circle:nth-child(7) {
+      transition: all 0.2s linear;
+    }
+
+    &:hover {
+      & path {
+        fill: #02b0e7;
+      }
+
+      & circle:nth-child(3),
+      circle:nth-child(4),
+      circle:nth-child(5),
+      circle:nth-child(6),
+      circle:nth-child(7) {
+        fill: #02b0e7;
+        stroke: #02b0e7;
+      }
+    }
+  }
+}

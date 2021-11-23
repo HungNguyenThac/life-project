@@ -1,0 +1,269 @@
+@import "../variables";
+
+.body1 {
+  width: 100%;
+  background: #043887;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .container1 {
+    max-width: 2080px;
+    width: 100%;
+    padding: 0 80px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+.botton-body1 {
+  padding: 10px 20px;
+  width: 165px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 34px;
+  margin-top: 48px;
+  border: none;
+  transition: all 0.25s ease-in-out;
+  & span {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #092d8e;
+    border: 1px solid $white-color;
+    & span {
+      color: $white-color;
+    }
+  }
+}
+
+.page1__menuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 265px;
+
+  & li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    user-select: none;
+    margin-bottom: 61px;
+
+    position: relative;
+
+    & a {
+      transition: all 0.2s linear;
+      color: white;
+      &:hover {
+        color: #02b0e7;
+      }
+    }
+  }
+
+  & li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      right: 0;
+      height: 3px;
+      width: 0%;
+      background-color: #02b0e7;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  & li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5) {
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  li:nth-child(6) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    position: relative;
+    user-select: none;
+
+    & a {
+      color: white;
+      transition: all 0.2s linear;
+
+      &:hover {
+        color: #02b0e7;
+      }
+    }
+  }
+
+  li:nth-child(6) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      right: 0;
+      height: 3px;
+      width: 0%;
+      background-color: #02b0e7;
+      transition: all 0.2s ease-in;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.page1__menu-circle {
+  position: absolute;
+  left: 1668px;
+  top: -118px;
+  width: 1025px;
+  display: none;
+  height: 1059px;
+  border-radius: 50%;
+  background: #002152;
+  will-change: opacity, transform-origin;
+  transition: all 3s ease-in-out;
+  animation: onShowMenuCircle 0.2s ease-in-out forwards;
+  transform-origin: 1926px -118px;
+}
+
+.page1__menu-circle.active {
+  display: block;
+}
+
+.toggle__menuList {
+  position: absolute;
+  display: none;
+  top: 190px;
+  right: 80px;
+  z-index: 999;
+  will-change: opacity;
+  animation: onShowMenuList 0.6s ease-in-out forwards;
+}
+
+.toggle__menuList.active {
+  display: block;
+}
+
+@keyframes onShowMenuList {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes onShowMenuCircle {
+  0% {
+    left: 1926px;
+    top: -118px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 1668px;
+    top: -118px;
+    opacity: 1;
+  }
+}
+
+.carousel-indicators {
+  bottom: -102px;
+}
+
+.page1__vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: 42px;
+  & svg {
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .container1 {
+    padding: 0 40px !important;
+  }
+  .carousel-indicators {
+    bottom: -62px;
+  }
+
+  .page1__vector {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container1 {
+    padding: 0 30px !important;
+  }
+  .carousel-indicators {
+    bottom: -62px;
+  }
+
+  .page1__vector {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .container1 {
+    padding: 0 24px !important;
+  }
+  .carousel-indicators {
+    bottom: -72px;
+  }
+
+  .page1__vector {
+    margin-top: 70px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container1 {
+    padding: 0 20px !important;
+  }
+  .carousel-indicators {
+    bottom: -72px;
+  }
+
+  .page1__vector {
+    margin-top: 70px;
+    margin-bottom: 18px;
+  }
+}
