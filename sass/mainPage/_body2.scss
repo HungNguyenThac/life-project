@@ -2,7 +2,6 @@
 
 .page2 {
   width: 100%;
-
   overflow: hidden;
 
   & .container2 {
@@ -27,6 +26,9 @@
 
 .page2 .container {
   margin-top: 92px;
+}
+
+.eKYC {
   margin-bottom: 72px;
 }
 
@@ -70,22 +72,55 @@
     color: $text-color;
   }
 }
+.service-digital {
+  cursor: pointer;
+  & span {
+    position: relative;
+    transition: all 0.25s ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      height: 2px;
+      width: 0%;
+      background-color: #02b0e7;
+      transition: all 0.25s ease-in;
+    }
+  }
+}
 
-@media screen and (min-width: 2000px) {
+.service-digital:hover {
+  & span {
+    color: $dark-blue;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
   .container2 {
-    padding: 0 100px !important;
+    padding: 0 80px !important;
+  }
+  .service-digital {
+    padding: 30px 0;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1700px) {
   .container2 {
-    padding: 0 80px !important;
+    padding: 0 60px !important;
+  }
+  .service-digital {
+    padding: 28px 0;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .container2 {
-    padding: 0 50px !important;
+    padding: 0 40px !important;
   }
 }
 
@@ -93,10 +128,55 @@
   .container2 {
     padding: 0 24px !important;
   }
+  .eKYC {
+    margin-bottom: 36px;
+  }
+  .page2 .container {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .list-service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .service-digital {
+    padding-left: 32px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .container2 {
     padding: 0 20px !important;
+  }
+  .eKYC {
+    margin-bottom: 30px;
+  }
+  .page2 .container {
+    margin-bottom: 30px;
+  }
+  .service-digital {
+    padding: 24px 0;
+  }
+  .service-digital {
+    padding-left: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    padding: 0 20px !important;
+  }
+  .eKYC {
+    margin-bottom: 30px;
+  }
+  .page2 .container {
+    margin-bottom: 30px;
+  }
+  .service-digital {
+    padding: 20px 0;
+    padding-left: 16px;
   }
 }

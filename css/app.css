@@ -479,6 +479,22 @@ img {
   color: #ffffff;
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 12px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.carousel-indicators .active {
+  width: 40px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 75px;
+}
+
 .page1__menuList {
   display: flex;
   flex-direction: column;
@@ -495,7 +511,7 @@ img {
   font-weight: normal;
   font-size: 36px;
   line-height: 42px;
-  color: white;
+  color: #ffffff;
   user-select: none;
   margin-bottom: 61px;
   position: relative;
@@ -676,6 +692,16 @@ img {
   }
 }
 @media screen and (max-width: 992px) {
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+  }
+
+  .carousel-indicators .active {
+    width: 30px;
+    height: 10px;
+  }
+
   .container1 {
     padding: 0 20px !important;
   }
@@ -714,6 +740,9 @@ img {
 
 .page2 .container {
   margin-top: 92px;
+}
+
+.eKYC {
   margin-bottom: 72px;
 }
 
@@ -759,29 +788,116 @@ img {
   color: #5b758d;
 }
 
-@media screen and (min-width: 2000px) {
+.service-digital {
+  cursor: pointer;
+}
+.service-digital span {
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+.service-digital span::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #02b0e7;
+  transition: all 0.25s ease-in;
+}
+
+.service-digital:hover span {
+  color: #092d8e;
+}
+.service-digital:hover span::before {
+  width: 100%;
+}
+
+@media screen and (min-width: 1700px) {
   .container2 {
-    padding: 0 100px !important;
+    padding: 0 80px !important;
+  }
+
+  .service-digital {
+    padding: 30px 0;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1700px) {
   .container2 {
-    padding: 0 80px !important;
+    padding: 0 60px !important;
+  }
+
+  .service-digital {
+    padding: 28px 0;
   }
 }
 @media screen and (max-width: 1400px) {
   .container2 {
-    padding: 0 50px !important;
+    padding: 0 40px !important;
   }
 }
 @media screen and (max-width: 1240px) {
   .container2 {
     padding: 0 24px !important;
   }
+
+  .eKYC {
+    margin-bottom: 36px;
+  }
+
+  .page2 .container {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .list-service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .service-digital {
+    padding-left: 32px;
+  }
 }
 @media screen and (max-width: 992px) {
   .container2 {
     padding: 0 20px !important;
+  }
+
+  .eKYC {
+    margin-bottom: 30px;
+  }
+
+  .page2 .container {
+    margin-bottom: 30px;
+  }
+
+  .service-digital {
+    padding: 24px 0;
+  }
+
+  .service-digital {
+    padding-left: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container2 {
+    padding: 0 20px !important;
+  }
+
+  .eKYC {
+    margin-bottom: 30px;
+  }
+
+  .page2 .container {
+    margin-bottom: 30px;
+  }
+
+  .service-digital {
+    padding: 20px 0;
+    padding-left: 16px;
   }
 }
 .page3 {
