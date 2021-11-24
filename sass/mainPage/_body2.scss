@@ -1,6 +1,6 @@
 @import "../variables";
 
-.page2 {
+.body2 {
   width: 100%;
   overflow: hidden;
 
@@ -13,13 +13,13 @@
   }
 }
 
-.page2__title {
+.body2__title {
   text-align: center;
   padding-top: 75px;
   font-family: $font_second;
 }
 
-.page2__subTitle {
+.body2__subTitle {
   margin-top: 12px;
   text-align: center;
 }
@@ -28,9 +28,9 @@
   margin-bottom: 72px;
 }
 
-.page2__content--right li:nth-child(1),
-.page2__content--right li:nth-child(2),
-.page2__content--right li:nth-child(3) {
+.body2__content--right li:nth-child(1),
+.body2__content--right li:nth-child(2),
+.body2__content--right li:nth-child(3) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -43,7 +43,7 @@
     color: $text-color;
   }
 }
-.icon__page2 {
+.icon__body2 {
   height: 50px;
   width: 50px;
   background: #f0f0f0;
@@ -54,7 +54,7 @@
   margin-right: 18px;
 }
 
-.page2__content--right li:last-child {
+.body2__content--right li:last-child {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -127,10 +127,10 @@
   .eKYC {
     margin-bottom: 36px;
   }
-  .page2 .container {
+  .body2 .container {
     margin-bottom: 36px;
   }
-  .page2__title {
+  .body2__title {
     padding-top: 65px;
   }
   .service-digital {
@@ -148,13 +148,13 @@
     padding-left: 28px;
     padding: 20px 0;
   }
-  .page2__title {
+  .body2__title {
     padding-top: 55px;
   }
   .service-digital:nth-child(3) {
     border-bottom: 1px solid #dee2e6;
   }
-  .page2 .container {
+  .body2 .container {
     margin-bottom: 30px;
   }
 }
@@ -166,18 +166,16 @@
   .eKYC {
     margin-bottom: 28px;
   }
-  .page2 .container {
-    margin-bottom: 30px;
-  }
+
   .service-digital {
     padding: 16px 0;
     padding-left: 24px;
   }
 
-  .page2__title {
+  .body2__title {
     padding-top: 45px;
   }
-  .page2 .container {
+  .body2 .container {
     margin-bottom: 24px;
   }
 }
@@ -189,17 +187,14 @@
   .eKYC {
     margin-bottom: 24px;
   }
-  .page2 .container {
-    margin-bottom: 30px;
-  }
   .service-digital {
     padding: 14px 0;
     padding-left: 16px;
   }
-  .page2__title {
+  .body2__title {
     padding-top: 35px;
   }
-  .page2 .container {
+  .body2 .container {
     margin-bottom: 18px;
   }
 }
