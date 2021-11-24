@@ -97,3 +97,26 @@
     margin-bottom: 18px;
   }
 }
+
+.block {
+  .block-title {
+  }
+  .block-content {
+  }
+}
+.block-post-wrapper {
+  background-color: #005c9f;
+  padding: 20px 0;
+}
+.block-post {
+  .items {
+    .item {
+      background-color: #fff;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      .item-content {
+        min-height: 300px;
+      }
+    }
+  }
+}

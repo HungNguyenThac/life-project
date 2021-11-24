@@ -1,27 +1,12 @@
 @import "../variables";
 
-.body1 {
+.block-intro-wrapper {
   width: 100%;
   background: #043887;
   overflow: hidden;
-
-  &__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  & .container1 {
-    max-width: 2080px;
-    width: 100%;
-    padding: 0 80px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-  }
 }
 
-.botton-body1 {
+.button-body1 {
   padding: 10px 20px;
   width: 165px;
   height: 42px;
@@ -30,14 +15,14 @@
   margin-top: 48px;
   border: none;
   transition: all 0.25s ease-in-out;
-  & span {
+  & h5 {
     margin-right: 10px;
   }
 
   &:hover {
     background-color: #092d8e;
     border: 1px solid $white-color;
-    & span {
+    & h5 {
       color: $white-color;
     }
   }

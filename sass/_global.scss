@@ -38,36 +38,36 @@
   align-items: flex-end;
 }
 
-.fs-64 {
+h1 {
   font-size: 64px;
   line-height: 150%;
   font-weight: bold;
 }
 
-.fs-36 {
+h2 {
   font-size: 36px;
   line-height: 150%;
   font-weight: 400;
 }
 
-.fs-30 {
+h3 {
   font-size: 30.8764px;
   line-height: 150%;
   font-weight: 400;
 }
 
-.fs-24 {
-  font-size: 23px;
+h4 {
+  font-size: 24px;
   line-height: 150%;
   font-weight: 400;
 }
 
-.fs-18 {
+h5 {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
 }
-.fs-16 {
+.p {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
@@ -91,6 +91,18 @@
 
 .text-violet {
   color: $violet-color;
+}
+
+.block {
+  margin: 0 12px;
+  .block-title {
+    padding-top: 75px;
+    .description {
+    }
+  }
+  .block-content {
+    padding-bottom: 75px;
+  }
 }
 @media (min-width: 1600px) {
   .container,
@@ -137,150 +149,177 @@
 }
 
 @media screen and (max-width: 1700px) {
-  .fs-64 {
+  h1 {
     font-size: 60px;
   }
-  .fs-36 {
+  h2 {
     font-size: 33px;
   }
 
-  .fs-30 {
+  h3 {
     font-size: 26.8764px;
   }
 
-  .fs-24 {
+  h4 {
     font-size: 22px;
   }
 
-  .fs-18 {
+  h5 {
     font-size: 16px;
   }
-  .fs-16 {
+  p {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1400px) {
-  .fs-64 {
+  h1 {
     font-size: 52px;
   }
 
-  .fs-36 {
+  h2 {
     font-size: 30px;
   }
 
-  .fs-30 {
+  h3 {
     font-size: 24.8764px;
   }
 
-  .fs-24 {
+  h4 {
     font-size: 20px;
   }
 
-  .fs-18 {
+  h5 {
     font-size: 16px;
   }
-  .fs-16 {
+  p {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1240px) {
-  .fs-64 {
+  h1 {
     font-size: 42px;
   }
 
-  .fs-36 {
+  h2 {
     font-size: 27px;
   }
 
-  .fs-30 {
+  h3 {
     font-size: 19.8764px;
   }
 
-  .fs-24 {
+  h4 {
     font-size: 18px;
   }
 
-  .fs-18 {
+  h5 {
     font-size: 16px;
   }
-  .fs-16 {
+  h6 {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .fs-64 {
+  h1 {
     font-size: 33px;
   }
 
-  .fs-36 {
+  h2 {
     font-size: 23px;
   }
 
-  .fs-30 {
+  h3 {
     font-size: 16px;
   }
 
-  .fs-24 {
+  h4 {
     font-size: 16px;
   }
 
-  .fs-18 {
+  h5 {
     font-size: 16px;
   }
-  .fs-16 {
+  p {
     font-size: 14px;
+  }
+  .block {
+    margin: 0 12px;
+    .block-title {
+      padding-top: 45px;
+    }
+    .block-content {
+      padding-bottom: 45px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .fs-64 {
+  h1 {
     font-size: 26px;
   }
 
-  .fs-36 {
+  h2 {
     font-size: 18px;
   }
 
-  .fs-30 {
+  h3 {
     font-size: 13px;
   }
 
-  .fs-24 {
+  h4 {
     font-size: 12px;
   }
 
-  .fs-18 {
+  .h5 {
     font-size: 12px;
   }
-  .fs-16 {
+  p {
     font-size: 10px;
+  }
+  .block {
+    margin: 0 10px;
+    .block-title {
+      padding-top: 35px;
+    }
+    .block-content {
+      padding-bottom: 35px;
+    }
   }
 }
 
 @media screen and (max-width: 576px) {
-  .fs-64 {
-    font-size: 21px;
+  h1 {
+    font-size: 24px;
   }
 
-  .fs-36 {
-    font-size: 12px;
+  h2 {
+    font-size: 16px;
   }
 
-  .fs-30 {
+  h3 {
+    font-size: 13px;
+  }
+
+  h4 {
     font-size: 10px;
   }
 
-  .fs-24 {
+  h5 {
+    font-size: 10px;
+  }
+  p {
     font-size: 8px;
   }
-
-  .fs-18 {
-    font-size: 7px;
-  }
-  .fs-16 {
-    font-size: 6px;
+  .block {
+    margin: 0 8px;
+    .block-title {
+      padding-top: 28px;
+    }
+    .block-content {
+      padding-bottom: 28px;
+    }
   }
 }

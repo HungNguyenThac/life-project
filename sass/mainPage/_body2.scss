@@ -13,19 +13,13 @@
   }
 }
 
-.body2__title {
-  text-align: center;
-  padding-top: 75px;
+.block-title {
   font-family: $font_second;
 }
 
 .body2__subTitle {
   margin-top: 12px;
   text-align: center;
-}
-
-.eKYC {
-  margin-bottom: 72px;
 }
 
 .body2__content--right li:nth-child(1),
@@ -196,5 +190,10 @@
   }
   .body2 .container {
     margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .block-eKYC {
+    flex-direction: column-reverse;
   }
 }
