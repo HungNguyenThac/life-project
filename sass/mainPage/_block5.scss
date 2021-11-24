@@ -1,0 +1,32 @@
+@import "../variables";
+
+.trust-solution-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #2f72af;
+  .items {
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      max-width: 468px !important;
+    }
+  }
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

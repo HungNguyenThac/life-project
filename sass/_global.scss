@@ -67,7 +67,14 @@ h5 {
   line-height: 150%;
   font-weight: 400;
 }
-.p {
+
+h6 {
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+p {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
@@ -167,6 +174,10 @@ h5 {
   h5 {
     font-size: 16px;
   }
+  h6 {
+    font-size: 42px;
+  }
+
   p {
     font-size: 14px;
   }
@@ -191,6 +202,9 @@ h5 {
 
   h5 {
     font-size: 16px;
+  }
+  h6 {
+    font-size: 38px;
   }
   p {
     font-size: 14px;
@@ -218,6 +232,9 @@ h5 {
     font-size: 16px;
   }
   h6 {
+    font-size: 33px;
+  }
+  p {
     font-size: 14px;
   }
 }
@@ -241,6 +258,9 @@ h5 {
 
   h5 {
     font-size: 16px;
+  }
+  h6 {
+    font-size: 30px;
   }
   p {
     font-size: 14px;
@@ -276,6 +296,9 @@ h5 {
   .h5 {
     font-size: 12px;
   }
+  h6 {
+    font-size: 26px;
+  }
   p {
     font-size: 10px;
   }
@@ -309,6 +332,9 @@ h5 {
 
   h5 {
     font-size: 10px;
+  }
+  h6 {
+    font-size: 22px;
   }
   p {
     font-size: 8px;
