@@ -235,7 +235,7 @@
 }
 @media screen and (max-width: 768px) {
   .fs-64 {
-    font-size: 29px;
+    font-size: 26px;
   }
 
   .fs-36 {
@@ -251,11 +251,11 @@
   }
 
   .fs-18 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .fs-16 {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 html,
@@ -686,9 +686,23 @@ img {
     bottom: -72px;
   }
 
+  .carousel-indicators .active {
+    width: 32px;
+    height: 12px;
+  }
+
   .page1__vector {
     margin-top: 70px;
     margin-bottom: 24px;
+  }
+
+  .botton-body1 {
+    padding: 10px 20px;
+    width: 136px;
+    height: 34px;
+  }
+  .botton-body1 span {
+    margin-right: 4px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -698,8 +712,8 @@ img {
   }
 
   .carousel-indicators .active {
-    width: 30px;
-    height: 10px;
+    width: 26px;
+    height: 8px;
   }
 
   .container1 {
@@ -713,6 +727,25 @@ img {
   .page1__vector {
     margin-top: 70px;
     margin-bottom: 18px;
+  }
+
+  .botton-body1 {
+    padding: 8px 16px;
+    width: 128px;
+    height: 28px;
+  }
+  .botton-body1 span {
+    margin-right: 4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .botton-body1 {
+    padding: 8px 16px;
+    width: 110px;
+    height: 26px;
+  }
+  .botton-body1 span {
+    margin-right: 4px;
   }
 }
 .page2 {
@@ -736,10 +769,6 @@ img {
 .page2__subTitle {
   margin-top: 12px;
   text-align: center;
-}
-
-.page2 .container {
-  margin-top: 92px;
 }
 
 .eKYC {
@@ -849,6 +878,14 @@ img {
   .page2 .container {
     margin-bottom: 36px;
   }
+
+  .page2__title {
+    padding-top: 65px;
+  }
+
+  .service-digital {
+    padding: 24px 0;
+  }
 }
 @media screen and (max-width: 1200px) {
   .list-service {
@@ -858,7 +895,20 @@ img {
   }
 
   .service-digital {
-    padding-left: 32px;
+    padding-left: 28px;
+    padding: 20px 0;
+  }
+
+  .page2__title {
+    padding-top: 55px;
+  }
+
+  .service-digital:nth-child(3) {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .page2 .container {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -867,7 +917,7 @@ img {
   }
 
   .eKYC {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .page2 .container {
@@ -875,11 +925,16 @@ img {
   }
 
   .service-digital {
-    padding: 24px 0;
+    padding: 16px 0;
+    padding-left: 24px;
   }
 
-  .service-digital {
-    padding-left: 28px;
+  .page2__title {
+    padding-top: 45px;
+  }
+
+  .page2 .container {
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -888,7 +943,7 @@ img {
   }
 
   .eKYC {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   .page2 .container {
@@ -896,8 +951,16 @@ img {
   }
 
   .service-digital {
-    padding: 20px 0;
+    padding: 14px 0;
     padding-left: 16px;
+  }
+
+  .page2__title {
+    padding-top: 35px;
+  }
+
+  .page2 .container {
+    margin-bottom: 18px;
   }
 }
 .page3 {

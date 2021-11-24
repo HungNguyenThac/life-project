@@ -264,9 +264,22 @@
     bottom: -72px;
   }
 
+  .carousel-indicators .active {
+    width: 32px;
+    height: 12px;
+  }
+
   .page1__vector {
     margin-top: 70px;
     margin-bottom: 24px;
+  }
+  .botton-body1 {
+    padding: 10px 20px;
+    width: 136px;
+    height: 34px;
+    & span {
+      margin-right: 4px;
+    }
   }
 }
 
@@ -277,8 +290,8 @@
   }
 
   .carousel-indicators .active {
-    width: 30px;
-    height: 10px;
+    width: 26px;
+    height: 8px;
   }
   .container1 {
     padding: 0 20px !important;
@@ -290,5 +303,25 @@
   .page1__vector {
     margin-top: 70px;
     margin-bottom: 18px;
+  }
+
+  .botton-body1 {
+    padding: 8px 16px;
+    width: 128px;
+    height: 28px;
+    & span {
+      margin-right: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .botton-body1 {
+    padding: 8px 16px;
+    width: 110px;
+    height: 26px;
+    & span {
+      margin-right: 4px;
+    }
   }
 }

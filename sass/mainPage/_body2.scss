@@ -24,10 +24,6 @@
   text-align: center;
 }
 
-.page2 .container {
-  margin-top: 92px;
-}
-
 .eKYC {
   margin-bottom: 72px;
 }
@@ -134,6 +130,12 @@
   .page2 .container {
     margin-bottom: 36px;
   }
+  .page2__title {
+    padding-top: 65px;
+  }
+  .service-digital {
+    padding: 24px 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -143,7 +145,17 @@
     align-items: center;
   }
   .service-digital {
-    padding-left: 32px;
+    padding-left: 28px;
+    padding: 20px 0;
+  }
+  .page2__title {
+    padding-top: 55px;
+  }
+  .service-digital:nth-child(3) {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .page2 .container {
+    margin-bottom: 30px;
   }
 }
 
@@ -152,16 +164,21 @@
     padding: 0 20px !important;
   }
   .eKYC {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   .page2 .container {
     margin-bottom: 30px;
   }
   .service-digital {
-    padding: 24px 0;
+    padding: 16px 0;
+    padding-left: 24px;
   }
-  .service-digital {
-    padding-left: 28px;
+
+  .page2__title {
+    padding-top: 45px;
+  }
+  .page2 .container {
+    margin-bottom: 24px;
   }
 }
 
@@ -170,13 +187,19 @@
     padding: 0 20px !important;
   }
   .eKYC {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
   .page2 .container {
     margin-bottom: 30px;
   }
   .service-digital {
-    padding: 20px 0;
+    padding: 14px 0;
     padding-left: 16px;
+  }
+  .page2__title {
+    padding-top: 35px;
+  }
+  .page2 .container {
+    margin-bottom: 18px;
   }
 }
