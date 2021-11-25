@@ -3,8 +3,6 @@
 .lvt-mission-wrapper {
   width: 100%;
   overflow: hidden;
-}
-.lvt-mission-wrapper {
   h1 {
     line-height: 79px;
   }
@@ -23,12 +21,19 @@
   h1 {
     line-height: 52px !important;
   }
+  .lvt-mission-wrapper {
+    .block-content {
+      margin-top: 0px;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 992px) {
+  .lvt-mission-wrapper {
+    img {
+      animation: none;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

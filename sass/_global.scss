@@ -42,6 +42,7 @@ h1 {
   font-size: 64px;
   line-height: 150%;
   font-weight: bold;
+  font-family: $font-second !important;
 }
 
 h2 {
@@ -66,18 +67,21 @@ h5 {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
+  text-align: justify;
 }
 
 h6 {
   font-size: 48px;
   line-height: 150%;
   font-weight: bold;
+  font-family: $font-second !important;
 }
 
 p {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
+  text-align: justify;
 }
 
 .text-white {
@@ -100,6 +104,9 @@ p {
   color: $violet-color;
 }
 
+.text-darkblue {
+  color: $dark-blue;
+}
 .block {
   margin: 0 12px;
   .block-title {
@@ -108,6 +115,7 @@ p {
     }
   }
   .block-content {
+    margin-top: 28px;
     padding-bottom: 75px;
   }
 }
@@ -271,6 +279,7 @@ p {
       padding-top: 45px;
     }
     .block-content {
+      margin-top: 24px;
       padding-bottom: 45px;
     }
   }
@@ -293,7 +302,7 @@ p {
     font-size: 12px;
   }
 
-  .h5 {
+  h5 {
     font-size: 12px;
   }
   h6 {
@@ -308,6 +317,7 @@ p {
       padding-top: 35px;
     }
     .block-content {
+      margin-top: 18px;
       padding-bottom: 35px;
     }
   }
@@ -333,18 +343,22 @@ p {
   h5 {
     font-size: 10px;
   }
+
   h6 {
-    font-size: 22px;
+    font-size: 12px;
   }
+
   p {
     font-size: 8px;
   }
+
   .block {
     margin: 0 8px;
     .block-title {
       padding-top: 28px;
     }
     .block-content {
+      margin-top: 14px;
       padding-bottom: 28px;
     }
   }

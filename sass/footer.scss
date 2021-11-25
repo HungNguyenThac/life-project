@@ -1,99 +1,75 @@
 @import "variables";
-
 .footer {
   width: 100%;
-  height: 91px;
   overflow: hidden;
-
-  &__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #373d4b;
+  input,
+  textarea,
+  .btn-send-infoUser {
+    background-color: #3f4452;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px 0 20px 19px;
   }
+  input {
+    padding: 20px 0 20px 19px;
+  }
+  textarea {
+    min-height: 200px;
+  }
+}
 
-  & .container8 {
-    max-width: 2080px;
-    width: 100%;
-    height: 100%;
-    padding: 0 80px;
-    background: #2f3443;
-    position: relative;
-    display: flex;
-    align-items: center;
+.btn-send-infoUser {
+  background-color: $background-button !important;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    background-color: $dark-blue !important;
+  }
+}
 
-    & div:nth-child(3) {
-      width: 371px;
-      height: 19px;
-      margin-left: 282px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      color: #baccdc;
-    }
-
-    & button {
-      width: 140px;
-      height: 40px;
-      border: 0.5px solid #baccdc;
-      border-radius: 10px;
-      margin-left: 56px;
-      background-color: transparent;
-
-      & span {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        color: #baccdc;
-        margin-right: 20px;
-      }
+.mobile-phone,
+.address,
+.mail {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  p {
+    transition: all 0.25s ease-in-out;
+  }
+  &:hover {
+    p {
+      color: $white-color;
     }
   }
+}
 
-  &__logo {
-    width: 139px;
-    height: 37px;
-    margin-right: 77px;
+.block-map {
+  position: relative;
+  .location {
+    position: absolute;
+    right: 168px;
+    top: 68px;
   }
+}
 
-  &__category {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (min-width: 1700px) {
+}
 
-    & li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 48px;
-      & a {
-        transition: all 0.2s ease-in-out;
-      }
-    }
+@media screen and (max-width: 1500px) {
+}
 
-    & li:hover {
-      & a {
-        color: cyan;
-      }
-    }
+@media screen and (max-width: 1400px) {
+}
 
-    & li img {
-      width: 9px;
-      height: 9px;
-      margin-right: 13px;
-      border-radius: 50%;
-      background: #505583;
-      margin-right: 13px;
-    }
+@media screen and (max-width: 1200px) {
+}
 
-    & li a {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 150%;
+@media screen and (max-width: 992px) {
+}
 
-      color: #baccdc;
-    }
-  }
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
 }

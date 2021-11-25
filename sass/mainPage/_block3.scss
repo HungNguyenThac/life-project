@@ -5,14 +5,21 @@
 }
 .block-post {
   .items {
+    margin-bottom: 30px;
     & .item {
       background-color: #fff;
       border-radius: 20px;
-      margin-bottom: 30px;
       justify-content: space-evenly;
       .item-content {
         min-height: 276px;
       }
+    }
+  }
+}
+.block-post {
+  .items {
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 }
@@ -31,11 +38,10 @@
     .items:hover {
       transform: translateY(-24px);
     }
+    .block-content {
+      margin-top: 42px;
+    }
   }
-}
-
-.block-content {
-  margin-top: 42px;
 }
 
 @media (min-width: 1400px) {
@@ -45,49 +51,58 @@
 }
 
 @media screen and (max-width: 1240px) {
-  .block-content {
-    margin-top: 38px;
-  }
 }
 
 @media screen and (max-width: 1200px) {
-  .block-content {
-    margin-top: 32px;
-  }
-  .item-content {
-    min-height: 311px !important;
+  .block-post-wrapper {
+    .item-content {
+      min-height: 311px !important;
+    }
   }
 }
 
 @media screen and (max-width: 992px) {
-  .block-content {
-    margin-top: 28px;
-  }
   .item-content {
     min-height: 246px;
+  }
+  .block-post-wrapper {
+    .block-content {
+      .items:hover {
+        transform: none;
+      }
+    }
+    .item-content {
+      min-height: 206px !important;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .block-content {
-    margin-top: 24px;
-  }
   .item-content {
     min-height: 180px !important;
+  }
+  .block-post-wrapper {
+    .item-content {
+      min-height: 168px !important;
+    }
   }
 }
 @media screen and (max-width: 576px) {
   .description {
     padding: 0 20px;
   }
-  .block-content {
-    margin-top: 18px;
+  .block-post-wrapper {
+    .item-content {
+      min-height: 136px !important;
+    }
   }
-  h4 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 12px;
-    text-align: justify;
+
+  .block-post {
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      text-align: justify;
+    }
   }
 }
