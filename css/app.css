@@ -1120,18 +1120,17 @@ img {
   border-radius: 10px;
   padding: 20px 0 20px 19px;
 }
-.footer input {
-  padding: 20px 0 20px 19px;
-}
 .footer textarea {
   min-height: 200px;
 }
 
 .btn-send-infoUser {
   background-color: #0072be !important;
-  transition: all 0.25s ease-in-out;
+  border: 1px solid #0072be;
+  transition: all 0.15s ease-in-out;
 }
 .btn-send-infoUser:hover {
+  border: 1px solid white;
   background-color: #092d8e !important;
 }
 
@@ -1160,6 +1159,124 @@ img {
   position: absolute;
   right: 168px;
   top: 68px;
+}
+
+.email-form,
+.phone-form {
+  width: 50%;
+}
+
+.bottom-footer {
+  background-color: #2f3443;
+  padding: 20px 0;
+}
+.bottom-footer .logo-footer {
+  cursor: pointer;
+}
+.bottom-footer .category {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+.bottom-footer .category h5 {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.bottom-footer .category:hover h5 {
+  color: white;
+}
+
+.des-footer h5 {
+  user-select: none;
+  transition: all 0.25s ease-in-out;
+}
+.des-footer:hover h5 {
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  min-width: 100px;
+  padding: 0;
+  border-radius: 10px !important;
+}
+.dropdown-menu button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 6px 6px;
+  transition: all 0.25s ease-in-out;
+}
+.dropdown-menu button:hover {
+  background-color: #092d8e;
+  color: #ffffff;
+}
+
+.btn.btn-secondary.dropdown-toggle {
+  transition: all 0.25s ease-in-out;
+}
+.btn.btn-secondary.dropdown-toggle:hover {
+  background-color: #092d8e;
+  color: #ffffff;
+}
+
+.bottom-footer .category-list {
+  display: block;
+}
+.bottom-footer .btn-category-list {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  input,
+textarea,
+.btn-send-infoUser {
+    padding: 10px 0 10px 16px !important;
+  }
+
+  textarea {
+    min-height: 144px !important;
+  }
+
+  .email-form {
+    width: 65%;
+  }
+
+  .phone-form {
+    width: 35%;
+  }
+
+  .bottom-footer .category-list {
+    display: none;
+  }
+  .bottom-footer .btn-category-list {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer .block-content {
+    margin-top: 0px !important;
+  }
+
+  input,
+textarea,
+.btn-send-infoUser {
+    padding: 8px 0 8px 14px !important;
+    border-radius: 6px !important;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .email-form,
+.phone-form {
+    width: 50%;
+  }
+
+  input,
+textarea,
+.btn-send-infoUser {
+    padding: 6px 0 6px 10px !important;
+    border-radius: 6px !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
