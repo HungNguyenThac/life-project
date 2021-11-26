@@ -66,7 +66,6 @@ h5 {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
-  text-align: justify;
 }
 
 h6 {
@@ -845,7 +844,7 @@ img {
 }
 @media screen and (max-width: 1200px) {
   .block-post-wrapper .item-content {
-    min-height: 311px !important;
+    min-height: 335px !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1180,10 +1179,10 @@ img {
 .footer-bottom .footer-bottom-left .logo-footer {
   cursor: pointer;
 }
-.footer-bottom .footer-bootom-right .footer-menu,
-.footer-bottom .footer-bottom-left .footer-menu {
+.footer-bottom .footer-bootom-right .footer-menu ul,
+.footer-bottom .footer-bottom-left .footer-menu ul {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .footer-bottom .footer-bootom-right .footer-menu .category,
@@ -1281,7 +1280,6 @@ textarea,
 .footer-logo {
     margin: 8px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -1303,6 +1301,10 @@ textarea,
   .category h5 {
     color: #ffffff;
   }
+
+  .footer-menu ul {
+    justify-content: center !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .footer-menu {
@@ -1319,6 +1321,10 @@ textarea,
 .btn-send-infoUser {
     padding: 6px 0 6px 10px !important;
     border-radius: 6px !important;
+  }
+
+  .copyright {
+    justify-content: center;
   }
 }
 

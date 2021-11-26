@@ -72,9 +72,12 @@
       cursor: pointer;
     }
     .footer-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      & ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+
       .category {
         display: flex;
         justify-content: center;
@@ -174,7 +177,6 @@
   .footer-logo {
     margin: 8px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .footer .block-content {
@@ -195,6 +197,11 @@
       color: $white-color;
     }
   }
+  .footer-menu {
+    & ul {
+      justify-content: center !important;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -210,5 +217,8 @@
   .btn-send-infoUser {
     padding: 6px 0 6px 10px !important;
     border-radius: 6px !important;
+  }
+  .copyright {
+    justify-content: center;
   }
 }
