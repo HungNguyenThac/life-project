@@ -698,7 +698,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <div id="footer">
       <div class="container">
         <div class="block">
           <div class="block-title"></div>
@@ -778,91 +778,69 @@
           </div>
         </div>
       </div>
-    </footer>
-    <div class="bottom-footer">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-1 col-2">
-            <a href="#">
-              <img
-                class="w-100 logo-footer"
-                srcset="./assets/images/footer/logo-footer.png 2x"
-                alt="logo-footer"
-              />
-            </a>
-          </div>
-          <div class="col-md-5 category-list">
-            <ul class="flex-row-center-center">
-              <li class="category">
-                <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                <a href="#">
-                  <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Trang chủ</h5>
-                </a>
-              </li>
-              <li class="category ms-xxl-3 ms-sm-1">
-                <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Giới thiệu</h5>
-              </li>
-              <li class="category ms-xxl-3 ms-sm-1">
-                <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Sản phẩm</h5>
-              </li>
-              <li class="category ms-xxl-3 ms-sm-1">
-                <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Khách hàng</h5>
-              </li>
-              <li class="category ms-xxl-3 ms-sm-1">
-                <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Liên hệ</h5>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="
-              btn-category-list btn-group
-              dropup
-              offset-lg-1
-              col-lg-2 col-2
-            "
-          >
-            <button
-              type="button"
-              class="btn-language dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              <h5 style="display: inline-block">Trang chủ</h5>
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <h5 style="display: inline-block">Trang chủ</h5>
-              </li>
-              <li>
-                <h5 style="display: inline-block">Giới thiệu</h5>
-              </li>
-              <li>
-                <h5 style="display: inline-block">Sản phẩm</h5>
-              </li>
-              <li>
-                <h5 style="display: inline-block">Khách hàng</h5>
-              </li>
-              <li>
-                <h5 style="display: inline-block">Liên hệ</h5>
-              </li>
-            </ul>
-          </div>
-          <div class="des-footer col-lg-4 col-6 col-sm-5">
-            <h5 class="text">
-              © Copyright 2021 "Life Project", All rights reserved
-            </h5>
-          </div>
-          <div class="btn-group dropup col-2">
-            <button
-              type="button"
-              class="btn-language dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              <h5 style="display: inline-block">Việt Nam</h5>
-            </button>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-lg-6">
+              <div class="row footer-bottom-left">
+                <div class="footer-logo col-9 col-xl-2 col-sm-2">
+                  <a href="#">
+                    <img
+                      class="w-100 logo-footer"
+                      srcset="./assets/images/footer/logo-footer.png 2x"
+                      alt="logo-footer"
+                    />
+                  </a>
+                </div>
+                <ul class="footer-menu col-12 col-xl-10 col-sm-6">
+                  <li class="category">
+                    <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
+                    <a href="#">
+                      <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Trang chủ</h5>
+                    </a>
+                  </li>
+                  <li class="category ms-xxl-3 ms-sm-1">
+                    <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
+                    <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Giới thiệu</h5>
+                  </li>
+                  <li class="category ms-xxl-3 ms-sm-1">
+                    <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
+                    <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Sản phẩm</h5>
+                  </li>
+                  <li class="category ms-xxl-3 ms-sm-1">
+                    <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
+                    <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Khách hàng</h5>
+                  </li>
+                  <li class="category ms-xxl-3 ms-sm-1">
+                    <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
+                    <h5 class="text ms-xxl-3 ms-lg-3 ms-sm-2">Liên hệ</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="row footer-bootom-right">
+                <div class="copyright col-8 col-sm-8">
+                  <h5>
+                    © Copyright
+                    <script type="text/javascript">
+                      const year = new Date();
+                      document.write(year.getFullYear());
+                    </script>
+                    "Life Project", All rights reserved
+                  </h5>
+                </div>
+                <div class="btn-group dropup col-4 col-sm-3 mb-sm-1 mb-2">
+                  <button
+                    type="button"
+                    class="btn-language dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    <h5 style="display: inline-block">Vietnamese</h5>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
