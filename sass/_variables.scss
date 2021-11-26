@@ -1,6 +1,10 @@
+@font-face {
+  font-family: iCielSamsungSharp;
+  src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
 $font-primary: "Roboto", sans-serif;
 
-$font-second: "Playfair Display", serif;
+$font-second: iCielSamsungSharp, serif;
 
 $grey-color: #454545;
 

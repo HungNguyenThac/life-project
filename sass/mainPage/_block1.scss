@@ -4,6 +4,9 @@
   width: 100%;
   background: #043887;
   overflow: hidden;
+  .block {
+    padding-bottom: 0 !important;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -25,28 +28,6 @@
 .carousel-indicators {
   bottom: -102px;
 }
-.btn-see-more {
-  outline: none;
-  border: 1px solid white;
-  border-radius: 34px;
-  transition: all 0.25s ease-in-out;
-  div {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h5 {
-      white-space: nowrap;
-      padding: 4px 14px;
-    }
-  }
-  &:hover {
-    background: $dark-blue;
-    h5 {
-      color: white;
-    }
-  }
-}
 
 .intro__vector {
   display: flex;
@@ -54,21 +35,16 @@
   align-items: center;
   margin-top: 130px;
   margin-bottom: 42px;
-  & svg {
-    z-index: 999;
-  }
-}
-
-.mouse-intro {
-  width: 20px;
-  height: 31.58px;
-  margin: 60px 0 30px 0;
 }
 
 @media screen and (max-width: 1240px) {
   .carousel-indicators .active {
     width: 32px;
     height: 12px;
+  }
+  .intro__vector {
+    margin-top: 116px;
+    margin-bottom: 20px;
   }
 }
 
@@ -83,6 +59,10 @@
   }
   .carousel-indicators {
     bottom: -65px;
+  }
+  .intro__vector {
+    margin-top: 24px;
+    margin-bottom: 0px;
   }
   .mouse-intro {
     width: 16px;

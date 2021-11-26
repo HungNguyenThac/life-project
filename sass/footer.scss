@@ -86,11 +86,7 @@
           white-space: nowrap;
           cursor: pointer;
           transition: all 0.25s ease-in-out;
-        }
-        &:hover {
-          h5 {
-            color: white;
-          }
+          color: white;
         }
       }
     }
@@ -102,6 +98,7 @@
     cursor: pointer;
     transition: all 0.25s ease-in-out;
     color: $white-color;
+    text-align: end;
   }
 }
 
