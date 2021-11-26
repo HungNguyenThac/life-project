@@ -69,6 +69,7 @@
     justify-content: center;
     align-items: center !important;
     & h5 {
+      white-space: nowrap;
       cursor: pointer;
       transition: all 0.25s ease-in-out;
     }
@@ -110,7 +111,15 @@
   }
 }
 
-.btn.btn-secondary.dropdown-toggle {
+.btn-language {
+  width: 100%;
+  padding: 6px 6px;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.btn-language {
   transition: all 0.25s ease-in-out;
   &:hover {
     background-color: $dark-blue;
@@ -124,6 +133,14 @@
   }
   .btn-category-list {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .des-footer,
+  .category {
+    h5 {
+      font-size: 12px !important;
+    }
   }
 }
 
@@ -163,7 +180,11 @@
     border-radius: 6px !important;
     font-size: 10px;
   }
+  .des-footer {
+    display: none;
+  }
 }
+
 @media screen and (max-width: 576px) {
   .email-form,
   .phone-form {
