@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Project</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="/assets/owl-carousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/owl-carousel/css/owl.theme.default.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,7 +30,6 @@
     <div class="block-intro-wrapper">
       <div class="container">
         <div class="block">
-          <div class="block-title"></div>
           <div class="block-content">
             <div
               id="carouselExampleIndicators"
@@ -74,12 +76,12 @@
                           các API
                         </h5>
                         <button class="btn-see-more">
-                          <a href="#" class="btn-link">
-                            <span class="text">Xem thêm</span>
-                          </a>
+                          <span class="text-darkblue">Xem thêm</span>
                           <img
                             class="btn-image"
-                            srcset="./assets/images/mainPage/arrow-right.png 2x"
+                            srcset="
+                              ./assets/images/mainPage/arrow-seeMore.png 2x
+                            "
                             alt="arrow-right"
                           />
                         </button>
@@ -88,7 +90,7 @@
                     <div class="col-12 col-sm-6">
                       <img
                         class="w-100"
-                        src="./assets/images/mainPage/body1.png"
+                        srcset="./assets/images/mainPage/intro.png 2x"
                         alt="image-body1"
                       />
                     </div>
@@ -111,12 +113,12 @@
                           các API
                         </h5>
                         <button class="btn-see-more">
-                          <a href="#" class="btn-link">
-                            <span class="text">Xem thêm</span>
-                          </a>
+                          <span class="text-darkblue">Xem thêm</span>
                           <img
                             class="btn-image"
-                            srcset="./assets/images/mainPage/arrow-right.png 2x"
+                            srcset="
+                              ./assets/images/mainPage/arrow-seeMore.png 2x
+                            "
                             alt="arrow-right"
                           />
                         </button>
@@ -125,7 +127,7 @@
                     <div class="col-12 col-sm-6">
                       <img
                         class="w-100"
-                        src="./assets/images/mainPage/body1.png"
+                        srcset="./assets/images/mainPage/intro.png 2x"
                         alt="image-body1"
                       />
                     </div>
@@ -148,12 +150,12 @@
                           các API
                         </h5>
                         <button class="btn-see-more">
-                          <a href="#" class="btn-link">
-                            <span class="text">Xem thêm</span>
-                          </a>
+                          <span class="text-darkblue">Xem thêm</span>
                           <img
                             class="btn-image"
-                            srcset="./assets/images/mainPage/arrow-right.png 2x"
+                            srcset="
+                              ./assets/images/mainPage/arrow-seeMore.png 2x
+                            "
                             alt="arrow-right"
                           />
                         </button>
@@ -162,7 +164,7 @@
                     <div class="col-12 col-sm-6">
                       <img
                         class="w-100"
-                        src="./assets/images/mainPage/body1.png"
+                        srcset="./assets/images/mainPage/intro.png 2x"
                         alt="image-body1"
                       />
                     </div>
@@ -181,350 +183,307 @@
         </div>
       </div>
     </div>
-    <div class="our-solution-wrapper">
+    <div id="our-solution-wrapper">
       <div class="container">
         <div class="block">
           <div class="block-title">
             <h1 class="text-center text-grey">Giải pháp của chúng tôi</h1>
-            <div class="row justify-content-center">
-              <h5 class="col-10 col-xl-6 col-lg-8 col-sm-10 text text-center">
-                Cung cấp cho doanh nghiệp nền tảng công nghệ và giải pháp để
-                mang đến trải nghiệm ngân hàng tùy chỉnh bên trong sản phẩm và
-                giá trị hữu ích cho khách hàng của họ.
-              </h5>
-            </div>
+            <h6 class="text-center title-description">
+              Cung cấp cho doanh nghiệp nền tảng công nghệ và giải pháp để mang
+              đến trải nghiệm ngân hàng tùy chỉnh bên trong sản phẩm và giá trị
+              hữu ích cho khách hàng của họ.
+            </h6>
           </div>
           <div class="block-content">
             <div class="mt-lg-5 mt-sm-4 mt-3">
-              <div class="row gx-5">
+              <div class="row align-items-center">
                 <div class="col-lg-8 col-sm-12">
                   <!-- payments -->
-                  <div class="row align-content-center">
-                    <div class="col-sm-5 col-12">
-                      <a href="#">
-                        <h2 class="text-grey children-title">Payments</h2>
-                      </a>
-                      <h5 class="text mt-lg-2 mt-sm-1">
-                        Cung cấp nền tảng thanh toán như một dịch vụ trên điện
-                        toán đám mây. Giúp doanh nghiệp chuyển đổi số trong lĩnh
-                        vực thanh toán thông qua xây dựng hệ thống Ví nội bộ của
-                        Doanh nghiệp.
-                      </h5>
-                      <img
-                        class="mt-lg-2 mt-1 col-1"
-                        src="./assets/icon-svg/arrow-mainPage-body2.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="col-sm-7 col-12 mt-1 mt-sm-0">
-                      <img
-                        class="w-100"
-                        srcset="./assets/images/mainPage/payments.png 2x"
-                        alt="payment-image"
-                      />
-                    </div>
-                  </div>
-                  <!-- eKYC -->
-                  <div class="row block-eKYC mt-lg-5 mt-sm-3">
-                    <div class="col-sm-7 col-12 mt-1 mt-sm-0">
-                      <img
-                        class="w-100"
-                        srcset="./assets/images/mainPage/ekyc.png 2x"
-                        alt="ekyc-image"
-                      />
-                    </div>
-                    <div class="col-sm-5 col-12 mt-2 m-sm-0">
-                      <a href="#">
-                        <h2 class="text-grey children-title">eKYC</h2>
-                      </a>
-                      <div>
-                        <h5 class="text mt-lg-2 mt-sm-1">
-                          Tiếp cận, mở rộng tệp khách hàng và nâng cao trải
-                          nghiệm khách hàng của doanh nghiệp một cách an toàn,
-                          nhanh chóng, thuận tiện với giải pháp định danh điện
-                          tử.
-                        </h5>
-                      </div>
-                      <img
-                        class="mt-lg-2 mt-1 col-1"
-                        src="./assets/icon-svg/arrow-mainPage-body2.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <!-- list service digital -->
-                <ul class="mt-3 col-lg-4 col-12">
-                  <div class="ms-1 row gx-5 w-100 justify-content-around">
-                    <!-- item 1 -->
-                    <li
-                      class="
-                        flex-row-start-center
-                        col-lg-12 col-5
-                        service-digital
-                        border-top
-                      "
-                    >
-                      <div class="icon__body2">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="row block-payments">
+                      <div class="col-sm-5 col-12">
+                        <h3 class="text-grey children-title">Payments</h3>
+                        <p class="text mt-lx-2 mt-1">
+                          Cung cấp nền tảng thanh toán như một dịch vụ trên điện
+                          toán đám mây. Giúp doanh nghiệp chuyển đổi số trong
+                          lĩnh vực thanh toán thông qua xây dựng hệ thống Ví nội
+                          bộ của Doanh nghiệp.
+                        </p>
                         <img
-                          src="./assets/icon-svg/bank-mainPage-body2.svg"
-                          alt="bank-icon"
+                          class="arrow-image"
+                          srcset="./assets/images/mainPage/arrow-right.png 2x"
+                          alt="arrow-right"
                         />
                       </div>
-                      <a href="#">
-                        <h4 class="text">Full-service digital banking</h4>
+                      <figure class="col-sm-7 col-12 mt-1">
+                        <img
+                          class="w-100"
+                          srcset="./assets/images/mainPage/payments.png 2x"
+                          alt="payment-image"
+                        />
+                      </figure>
+                    </div>
+                  </a>
+                  <!-- eKYC -->
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="row block-eKYC mt-lg-4 mt-sm-3">
+                      <figure class="col-sm-7 col-12 mt-1 mt-sm-0">
+                        <img
+                          class="w-100"
+                          srcset="./assets/images/mainPage/ekyc.png 2x"
+                          alt="ekyc-image"
+                        />
+                      </figure>
+                      <div class="col-sm-5 col-12 mt-2 m-sm-0">
+                        <h3 class="text-grey children-title">eKYC</h3>
+                        <div>
+                          <p class="text mt-lx-2 mt-1">
+                            Tiếp cận, mở rộng tệp khách hàng và nâng cao trải
+                            nghiệm khách hàng của doanh nghiệp một cách an toàn,
+                            nhanh chóng, thuận tiện với giải pháp định danh điện
+                            tử.
+                          </p>
+                        </div>
+                        <img
+                          class="arrow-image"
+                          srcset="./assets/images/mainPage/arrow-right.png 2x"
+                          alt="arrow-right"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- list service digital -->
+                <div class="col-lg-4 col-12 mt-2">
+                  <ul class="ms-1 row w-100 justify-content-around">
+                    <!-- item 1 -->
+                    <li class="col-lg-12 col-5 service-digital">
+                      <a
+                        href="#our-solution-wrapper"
+                        class="flex-row-start-center"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="icon__body2">
+                          <img
+                            src="./assets/icon-svg/mainPage/block2-bank.svg"
+                            alt="bank-icon"
+                          />
+                        </div>
+                        <h5 class="text">Full-service digital banking</h5>
                       </a>
                     </li>
                     <!-- item 2 -->
-                    <li
-                      class="
-                        flex-row-start-center
-                        col-lg-12 col-5
-                        offset-lg-0 offset-sm-1
-                        service-digital
-                        border-top
-                      "
-                    >
-                      <div class="icon__body2">
-                        <img
-                          src="./assets/icon-svg/money-mainPage-body2.svg"
-                          alt="money-icon"
-                        />
-                      </div>
-                      <a href="#">
-                        <h4 class="text">Lending</h4>
+                    <li class="col-lg-12 col-5 service-digital">
+                      <a
+                        href="#our-solution-wrapper"
+                        class="flex-row-start-center"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="icon__body2">
+                          <img
+                            src="./assets/icon-svg/mainPage/block2-money.svg"
+                            alt="bank-icon"
+                          />
+                        </div>
+                        <h5 class="text">Lending</h5>
                       </a>
                     </li>
                     <!-- item 3 -->
-                    <li
-                      class="
-                        flex-row-start-center
-                        col-lg-12 col-5
-                        service-digital
-                        border-top
-                      "
-                    >
-                      <div class="icon__body2">
-                        <img
-                          src="./assets/icon-svg/moneyArrow-mainPage-body2.svg"
-                          alt="money-icon"
-                        />
-                      </div>
-                      <a href="#">
-                        <h4 class="text">Loyalty programmes</h4>
+                    <li class="col-lg-12 col-5 service-digital">
+                      <a
+                        href="#our-solution-wrapper"
+                        class="flex-row-start-center"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="icon__body2">
+                          <img
+                            src="./assets/icon-svg/mainPage/block2-money2.svg"
+                            alt="bank-icon"
+                          />
+                        </div>
+                        <h5 class="text">Loyalty programmes</h5>
                       </a>
                     </li>
                     <!-- item 4 -->
-                    <li
-                      class="
-                        flex-row-start-center
-                        col-lg-12 col-5
-                        offset-lg-0 offset-sm-1
-                        service-digital
-                        border-top border-bottom
-                      "
-                    >
-                      <div class="icon__body2">
-                        <img
-                          src="./assets/icon-svg/cardEdit-mainPage-body2.svg"
-                          alt="card-icon"
-                        />
-                      </div>
-                      <a href="#">
-                        <h4 class="text">Branded cards</h4>
+                    <li class="col-lg-12 col-5 service-digital border-bottom">
+                      <a
+                        href="#our-solution-wrapper"
+                        class="flex-row-start-center"
+                        rel="noopener noreferrer"
+                      >
+                        <div class="icon__body2">
+                          <img
+                            src="./assets/icon-svg/mainPage/block2-cardEdit.svg"
+                            alt="bank-icon"
+                          />
+                        </div>
+                        <h5 class="text">Branded cards</h5>
                       </a>
                     </li>
-                  </div>
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="block-post-wrapper">
+    <div id="block-post-wrapper">
       <div class="container">
         <div class="block block-post">
           <div class="block-title">
             <h1 class="title text-center text-white">Lợi thế vượt trội</h1>
-            <h2 class="description text-blue text-center">
+            <h3 class="post-title-des text-blue text-center">
               Khi doanh nghiệp ứng dụng giải pháp life project của chúng tôi
-            </h2>
+            </h3>
           </div>
           <div class="block-content">
-            <div class="row gx-5 justify-content-center">
-              <!-- item 1 -->
-              <div class="items col-lg-3 col-sm-5 col-10">
-                <div class="item row bg-white gy-2">
-                  <div class="item-image col-12 px-0 my-0">
+            <div class="posts owl-carousel owl-theme">
+              <!-- post 1 -->
+              <a href="#block-post-wrapper">
+                <div class="post">
+                  <figure class="post-image">
                     <img
                       class="w-100"
-                      srcset="./assets/images/mainPage/body3-1.png 2x"
+                      srcset="./assets/images/mainPage/post-image1.png 2x"
                       alt="banking-image"
                     />
-                  </div>
-                  <div class="item-content mt-0">
-                    <h4 class="px-3 mt-1 mt-sm-2 col-12 text-grey">
+                  </figure>
+                  <div class="post-content">
+                    <h5 class="text-grey">
                       Tích hợp dễ dàng, nhanh chóng, hỗ trợ đa nền tảng
-                    </h4>
-                    <h5 class="px-3 my-1 my-sm-2 col-12 w-100 text">
+                    </h5>
+                    <p class="text">
                       Giải pháp dễ dàng tích hợp vào quy trình làm việc của
                       doanh nghiệp, hỗ trợ đầy đủ đa dạng các nền tảng iOS,
                       Android, Web. Hỗ trợ API và SDK để rút ngắn thời gian tích
                       hợp.
-                    </h5>
-                    <div
-                      class="
-                        px-3
-                        py-2 py-xxl-4 py-xl-3 py-lg-3 py-md-2 py-sm-2
-                        mt-2 mt-xxl-3 mt-xl-3 mt-lg-2 mt-md-2
-                      "
-                    >
-                      <div class="col-1">
-                        <img
-                          class="w-100"
-                          srcset="./assets/images/mainPage/Arrow-right.png 2x"
-                          alt="arrow-right"
-                        />
-                      </div>
+                    </p>
+                    <div>
+                      <img
+                        class="arrow-image"
+                        srcset="./assets/images/mainPage/Arrow-right.png 2x"
+                        alt="arrow-right"
+                      />
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- item 2 -->
-              <div class="items col-lg-3 col-sm-5 col-10">
-                <div class="item row bg-white gy-2">
-                  <div class="item-content mt-0">
-                    <h4 class="px-3 mt-1 mt-sm-2 col-12 text-grey">
-                      Tối ưu nguồn lực, cải thiện doanh thu
-                    </h4>
-                    <h5 class="px-3 my-1 my-sm-2 col-12 w-100 text">
-                      Doanh nghiệp không phải đầu tư tiền bạc hạ tầng mà sử dụng
-                      hạ tầng có sẵn cung cấp qua nền tảng Cloud.
+              </a>
+              <!-- post 2 -->
+              <a href="#block-post-wrapper">
+                <div class="post">
+                  <div class="post-content">
+                    <h5 class="text-grey">
+                      Tích hợp dễ dàng, nhanh chóng, hỗ trợ đa nền tảng
                     </h5>
-                    <div
-                      class="
-                        px-3
-                        py-2 py-xxl-4 py-xl-3 py-lg-3 py-md-2 py-sm-2
-                        mt-2 mt-xxl-3 mt-xl-3 mt-lg-2 mt-md-2
-                      "
-                    >
-                      <div class="col-1">
-                        <img
-                          class="w-100"
-                          srcset="./assets/images/mainPage/Arrow-right.png 2x"
-                          alt="arrow-right"
-                        />
-                      </div>
+                    <p class="text">
+                      Giải pháp dễ dàng tích hợp vào quy trình làm việc của
+                      doanh nghiệp, hỗ trợ đầy đủ đa dạng các nền tảng iOS,
+                      Android, Web. Hỗ trợ API và SDK để rút ngắn thời gian tích
+                      hợp.
+                    </p>
+                    <div>
+                      <img
+                        class="arrow-image"
+                        srcset="./assets/images/mainPage/Arrow-right.png 2x"
+                        alt="arrow-right"
+                      />
                     </div>
                   </div>
-                  <div class="item-image col-12 px-0 my-0">
+                  <figure class="post-image">
                     <img
                       class="w-100"
-                      srcset="./assets/images/mainPage/body3-2.png 2x"
+                      srcset="./assets/images/mainPage/post-image2.png 2x"
                       alt="banking-image"
                     />
-                  </div>
+                  </figure>
                 </div>
-              </div>
-              <!-- item 3 -->
-              <div class="items col-lg-3 col-sm-5 col-10">
-                <div class="item row bg-white gy-2">
-                  <div class="item-image col-12 px-0 my-0">
+              </a>
+              <!-- post 3 -->
+              <a href="#block-post-wrapper">
+                <div class="post">
+                  <figure class="post-image">
                     <img
                       class="w-100"
-                      srcset="./assets/images/mainPage/body3-3.png 2x"
+                      srcset="./assets/images/mainPage/post-image3.png 2x"
                       alt="banking-image"
                     />
-                  </div>
-                  <div class="item-content mt-0">
-                    <h4 class="px-3 mt-1 mt-sm-2 col-12 text-grey">
-                      Tuỷ chỉnh linh hoạt, mở rộng không giới hạn
-                    </h4>
-                    <h5 class="px-3 my-1 my-sm-2 col-12 w-100 text">
-                      Cung cấp nền tảng ngân hàng lõi để doanh nghiệp tuỳ chỉnh
-                      linh hoạt, sáng tạo giải pháp theo nhu cầu đặc thù của
-                      ngành hàng, khách hàng và chiến lược phát triển của doanh
-                      nghiệp.
+                  </figure>
+                  <div class="post-content">
+                    <h5 class="text-grey">
+                      Tích hợp dễ dàng, nhanh chóng, hỗ trợ đa nền tảng
                     </h5>
-                    <div
-                      class="
-                        px-3
-                        py-2 py-xxl-4 py-xl-3 py-lg-3 py-md-2 py-sm-2
-                        mt-2 mt-xxl-3 mt-xl-3 mt-lg-2 mt-md-2
-                      "
-                    >
-                      <div class="col-1">
-                        <img
-                          class="w-100"
-                          srcset="./assets/images/mainPage/Arrow-right.png 2x"
-                          alt="arrow-right"
-                        />
-                      </div>
+                    <p class="text">
+                      Giải pháp dễ dàng tích hợp vào quy trình làm việc của
+                      doanh nghiệp, hỗ trợ đầy đủ đa dạng các nền tảng iOS,
+                      Android, Web. Hỗ trợ API và SDK để rút ngắn thời gian tích
+                      hợp.
+                    </p>
+                    <div>
+                      <img
+                        class="arrow-image"
+                        srcset="./assets/images/mainPage/Arrow-right.png 2x"
+                        alt="arrow-right"
+                      />
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- item 4 -->
-              <div class="items col-lg-3 col-sm-5 col-10">
-                <div class="item row bg-white gy-2">
-                  <div class="item-content mt-0">
-                    <h4 class="px-3 mt-1 mt-sm-2 col-12 text-grey">
-                      Tối ưu bảo mật
-                    </h4>
-                    <h5 class="px-3 my-1 my-sm-2 col-12 w-100 text">
-                      Bảo mật cao với chứng chỉ bảo mật quốc tế và mô hình bảo
-                      mật đa lớp, tích hợp các giải pháp bảo mật tiên tiến từ
-                      các đối tác hàng đầu thế giới.
+              </a>
+              <!-- post 4 -->
+              <a href="#block-post-wrapper">
+                <div class="post">
+                  <div class="post-content">
+                    <h5 class="text-grey">
+                      Tích hợp dễ dàng, nhanh chóng, hỗ trợ đa nền tảng
                     </h5>
-                    <div
-                      class="
-                        px-3
-                        py-2 py-xxl-4 py-xl-3 py-lg-3 py-md-2 py-sm-2
-                        mt-2 mt-xxl-3 mt-xl-3 mt-lg-2 mt-md-2
-                      "
-                    >
-                      <div class="col-1">
-                        <img
-                          class="w-100"
-                          srcset="./assets/images/mainPage/Arrow-right.png 2x"
-                          alt="arrow-right"
-                        />
-                      </div>
+                    <p class="text">
+                      Giải pháp dễ dàng tích hợp vào quy trình làm việc của
+                      doanh nghiệp, hỗ trợ đầy đủ đa dạng các nền tảng iOS,
+                      Android, Web. Hỗ trợ API và SDK để rút ngắn thời gian tích
+                      hợp.
+                    </p>
+                    <div>
+                      <img
+                        class="arrow-image"
+                        srcset="./assets/images/mainPage/Arrow-right.png 2x"
+                        alt="arrow-right"
+                      />
                     </div>
                   </div>
-                  <div class="item-image col-12 px-0 my-0">
+                  <figure class="post-image">
                     <img
                       class="w-100"
-                      srcset="./assets/images/mainPage/body3-4.png 2x"
+                      srcset="./assets/images/mainPage/post-image4.png 2x"
                       alt="banking-image"
                     />
-                  </div>
+                  </figure>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="lvt-mission-wrapper">
+    <div id="lvt-mission-wrapper">
       <div class="container">
         <div class="block">
-          <div class="block-title">
-            <div class="block-content row">
-              <div class="col-12 col-xl-5 col-sm-6 offset-xl-1">
+          <div class="row block-in-block">
+            <div class="col-12 col-xl-5 col-sm-6 offset-xl-1">
+              <div class="block-image">
                 <img
                   class="w-100"
-                  srcset="./assets/images/mainPage/body4.png 2x"
+                  srcset="./assets/images/mainPage/rocket-image.png 2x"
                   alt="rocket-image"
                 />
               </div>
-              <div class="col-12 col-xl-5 col-sm-6">
+            </div>
+            <div class="col-12 col-xl-5 col-sm-6">
+              <div class="block-content">
                 <h1 class="text-grey">Lienviettech</h1>
-                <h1 class="text">
+                <h2 class="text">
                   khai phóng hành trình số hoá tài chính doanh nghiệp
-                </h1>
-                <h5 class="mt-2 mt-md-4 text">
+                </h2>
+                <p class="mt-2 mt-md-4 text">
                   Bằng cách tận dụng sức mạnh công nghệ trong phát triển nền
                   tảng "Ngân hàng nhúng", LienVietTech loại bỏ rào cản đối với
                   các doanh nghiệp phi Ngân hàng, phi Tài chính trong nỗ lực
@@ -532,8 +491,8 @@
                   cho khách hàng và chính doanh nghiệp, từ đó tiên phong trong
                   cuộc cách mạng thiết lập kỷ nguyên mới của ngành tài chính,
                   xây dựng thế hệ công nghệ tài chính của tương lai.
-                </h5>
-                <h5 class="mt-2 mt-md-4 text">
+                </p>
+                <p class="mt-2 mt-md-4 text">
                   Life Project là nền tảng "Ngân hàng nhúng" sáng tạo bởi
                   LienVietTech, ra đời với sứ mệnh hỗ trợ doanh nghiệp cung cấp
                   dịch vụ ngân hàng sáng tạo theo thời gian thực cho khách hàng
@@ -542,100 +501,89 @@
                   thị trường mới với các giải pháp Ngân hàng số toàn diện, Định
                   danh điện tử, Chương trình thanh toán, Chương trình tín dụng,
                   Thẻ thương hiệu,...
-                </h5>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="trust-solution-wrapper">
+    <div id="customers-wrapper">
       <div class="container">
         <div class="block">
           <div class="block-title">
             <h1 class="text-center text-white">Giải pháp "ngân hàng nhúng"</h1>
-            <h6 class="text-white text-center">
+            <h2 class="text-white text-center">
               #1 việt nam được tin dùng bởi các doanh nghiệp hàng đầu
+            </h2>
+            <h6 class="title-description">
+              Những doanh nghiệp hàng đầu Việt Nam thuộc đa dạng lĩnh vực là
+              khách hàng của Life Project và cách họ sáng tạo, tuỳ ứng từ nền
+              tảng của chúng tôi nhằm thúc đẩy chuyển đổi số, tối ưu vận hành và
+              cải thiện chất lượng kinh doanh.
             </h6>
-            <div class="row justify-content-center">
-              <h5
-                class="
-                  col-xl-6 col-lg-8 col-sm-10 col-10
-                  text-blue
-                  mt-1 mt-sm-0
-                  text-center
-                "
-              >
-                Những doanh nghiệp hàng đầu Việt Nam thuộc đa dạng lĩnh vực là
-                khách hàng của Life Project và cách họ sáng tạo, tuỳ ứng từ nền
-                tảng của chúng tôi nhằm thúc đẩy chuyển đổi số, tối ưu vận hành
-                và cải thiện chất lượng kinh doanh.
-              </h5>
-            </div>
           </div>
           <div class="block-content">
-            <div class="items flex-row-center-center">
-              <div
-                class="row gap-xxl-4 gap-sm-3 gap-2 gx-5 justify-content-center"
-              >
-                <!-- item 1 -->
-                <div class="item col-md-4 col-6">
-                  <img srcset="./assets/images/mainPage/LVT.png 2x" alt="LVT" />
-                </div>
-                <!-- item 2 -->
-                <div class="item col-md-4 col-6">
-                  <img
-                    srcset="./assets/images/mainPage/saccombank.png 2x"
-                    alt="saccombank"
-                  />
-                </div>
-                <!-- item 3 -->
-                <div class="item col-md-4 col-6">
-                  <img
-                    srcset="./assets/images/mainPage/AEONMALL.png 2x"
-                    alt="AEONMALL"
-                  />
-                </div>
-                <!-- item 4 -->
-                <div class="item col-md-4 col-6">
-                  <img srcset="./assets/images/mainPage/SSI.png 2x" alt="SSI" />
-                </div>
-                <!-- item 5 -->
-                <div class="item col-md-4 col-6">
-                  <img
-                    srcset="./assets/images/mainPage/MediaMart.png 2x"
-                    alt="MediaMart"
-                  />
-                </div>
-                <!-- item 6 -->
-                <div class="item col-md-4 col-6">
-                  <img
-                    srcset="./assets/images/mainPage/Vingroup.png 2x"
-                    alt="Vingroup"
-                  />
-                </div>
+            <div class="row">
+              <div class="customer col-md-4 col-6">
+                <img
+                  class="customer-logo"
+                  srcset="./assets/images/mainPage/LVT.png 2x"
+                  alt="LVT"
+                />
+              </div>
+              <div class="customer col-md-4 col-6">
+                <img
+                  class="customer-logo"
+                  srcset="./assets/images/mainPage/saccombank.png 2x"
+                  alt="saccombank"
+                />
+              </div>
+              <div class="customer col-md-4 col-6">
+                <img
+                  class="customer-logo"
+                  srcset="./assets/images/mainPage/AEONMALL.png 2x"
+                  alt="AEONMALL"
+                />
+              </div>
+              <div class="customer col-md-4 col-6">
+                <img
+                  class="customer-logo-SSI"
+                  srcset="./assets/images/mainPage/SSI.png 2x"
+                  alt="SSI"
+                />
+              </div>
+              <div class="customer col-md-4 col-6">
+                <img
+                  class="customer-logo"
+                  srcset="./assets/images/mainPage/MediaMart.png 2x"
+                  alt="MediaMart"
+                />
+              </div>
+              <div class="customer col-md-4 col-6">
+                <img
+                  class="customer-logo-Vin"
+                  srcset="./assets/images/mainPage/Vingroup.png 2x"
+                  alt="Vingroup"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="experience-now-wrapper">
+    <div id="experience-now-wrapper">
       <div class="container">
         <div class="block">
-          <div class="block-title"></div>
-          <div class="block-content row">
-            <div class="offset-sm-1 col-sm-5 col-6 flex-column-center-start">
-              <div class="gx-5">
-                <h6 class="text">
-                  Khởi tạo nền tảng
-                  <span class="text-darkblue">"Ngân hàng nhúng"</span>
-                  toàn diện, tối ưu cho doanh nghiệp ngay!
-                </h6>
+          <div class="row align-items-center">
+            <div class="block-content offset-sm-1 col-sm-6 col-6">
+              <div class="">
+                <h2 class="text">
+                  Khởi tạo nền tảng Ngân hàng nhúng toàn diện, tối ưu cho doanh
+                  nghiệp ngay!
+                </h2>
                 <button class="btn-experience-now">
-                  <a href="#" class="btn-link">
-                    <span>Khởi tạo ngay</span>
-                  </a>
+                  <span>Khởi tạo ngay</span>
                   <img
                     class="btn-image"
                     srcset="./assets/images/mainPage/arrow-left.png 2x"
@@ -647,8 +595,8 @@
             <div class="block-image col-sm-4 col-6">
               <img
                 class="w-100"
-                srcset="./assets/images/mainPage/body6.png 2x"
-                alt="image-block6"
+                srcset="./assets/images/mainPage/target-image.png 2x"
+                alt="target-image"
               />
             </div>
           </div>
@@ -804,6 +752,13 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./assets/owl-carousel/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

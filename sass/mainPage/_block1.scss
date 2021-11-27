@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../common/variables";
 
 .block-intro-wrapper {
   width: 100%;
@@ -10,8 +10,8 @@
 }
 
 .carousel-indicators [data-bs-target] {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   margin: 0 12px;
   border-top: none;
@@ -19,8 +19,8 @@
 }
 
 .carousel-indicators .active {
-  width: 40px;
-  height: 14px;
+  width: 30px;
+  height: 10px;
   background: #ffffff;
   border-radius: 75px;
 }
@@ -36,12 +36,52 @@
   margin-top: 130px;
   margin-bottom: 42px;
 }
-
-@media screen and (max-width: 1240px) {
-  .carousel-indicators .active {
-    width: 32px;
-    height: 12px;
+//btn
+.btn-see-more {
+  background-color: white;
+  border: 1px solid white;
+  padding: 8px 18px;
+  border-radius: 34px;
+  z-index: 1;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  align-items: center;
+  margin-top: 30px;
+  .btn-image {
+    padding-left: 12px;
   }
+  & span {
+    transition: all 0.25s ease-in-out;
+  }
+  &:hover {
+    background-color: $dark-blue;
+    border: 1px solid white;
+    & span {
+      color: white;
+    }
+  }
+}
+
+.btn-see-more::after {
+  content: "";
+  z-index: -1;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  position: absolute;
+  left: 0px;
+  top: -50%;
+  bottom: -50%;
+  width: 1.25em;
+  transform: translate3d(-525%, 0, 0) rotate(35deg);
+}
+
+.btn-see-more:hover::after {
+  transition: transform 0.7s ease-in-out;
+  transform: translate3d(1100%, 0, 0) rotate(35deg);
+}
+
+//media
+@media screen and (max-width: 1240px) {
   .intro__vector {
     margin-top: 116px;
     margin-bottom: 20px;
@@ -49,14 +89,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
-  }
-  .carousel-indicators .active {
-    width: 26px;
-    height: 8px;
-  }
   .carousel-indicators {
     bottom: -65px;
   }
@@ -74,18 +106,26 @@
   .carousel-indicators {
     bottom: -45px;
   }
-  .carousel-indicators [data-bs-target] {
-    width: 6px;
-    height: 6px;
-    margin: 0 6px;
-  }
-  .carousel-indicators .active {
-    width: 18px;
-    height: 6px;
-  }
   .mouse-intro {
     width: 13px;
     margin: 18px 0 16px 0;
+  }
+
+  .btn-see-more {
+    margin-top: 18px;
+    padding: 4px 8px;
+    &::before {
+      border: 2px solid #0072be;
+    }
+    &:hover {
+      &::before {
+        border: 2px solid $dark-blue;
+      }
+    }
+
+    .btn-image {
+      padding-left: 4px;
+    }
   }
 }
 @media screen and (max-width: 576px) {

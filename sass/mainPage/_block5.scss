@@ -1,58 +1,97 @@
-@import "../variables";
+@import "../common/variables";
 
-.trust-solution-wrapper {
+#customers-wrapper {
   width: 100%;
   overflow: hidden;
   background-color: #2f72af;
-  .items {
-    .item {
-      display: flex;
+  .title-description {
+    max-width: 1300px;
+    color: $blue-color;
+  }
+  .block-content {
+    .row {
+      margin: 0;
       justify-content: center;
       align-items: center;
-      background-color: #fff;
-      max-width: 428px !important;
-      min-height: 168px !important;
+    }
+  }
+  .customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    max-width: 428px;
+    min-height: 168px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 12px;
+    &:hover {
+      & img {
+        animation: jelly 0.5s linear forwards;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #customers-wrapper {
+    .customer {
+      max-width: 338px;
+      min-height: 148px;
       border-radius: 10px;
-      cursor: pointer;
-      &:hover {
-        & img {
-          animation: jelly 0.5s linear forwards;
-        }
-      }
+      margin: 10px;
     }
   }
 }
 
-@media screen and (max-width: 1240px) {
-  .trust-solution-wrapper {
-    .items {
-      .item {
-        max-width: 308px !important;
-        img {
-          width: 50%;
-        }
-      }
+@media screen and (max-width: 1200px) {
+  #customers-wrapper {
+    .customer {
+      max-width: 290px;
+      min-height: 142px;
+      margin: 4px;
+    }
+  }
+  #customers-wrapper {
+    .customer-logo:nth-child(1) {
+      width: 70%;
+    }
+    .customer-logo-Vin,
+    .customer-logo-SSI {
+      width: 44%;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
-  .trust-solution-wrapper {
-    .items {
-      .item {
-        max-width: 248px !important;
-        min-height: 128px !important;
-      }
+@media screen and (max-width: 992px) {
+  #customers-wrapper {
+    .customer {
+      min-height: 104px;
+    }
+    .customer-logo:nth-child(1) {
+      width: 54%;
+    }
+    .customer-logo-Vin,
+    .customer-logo-SSI {
+      width: 34% !important;
     }
   }
 }
-@media screen and (max-width: 576px) {
-  .trust-solution-wrapper {
-    .items {
-      .item {
-        max-width: 148px !important;
-        min-height: 58px !important;
-      }
+@media screen and (max-width: 758px) {
+  #customers-wrapper {
+    .customer {
+      max-width: 242px;
+      min-height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 578px) {
+  #customers-wrapper {
+    .customer {
+      max-width: 148px;
+      min-height: 58px;
     }
   }
 }

@@ -1,33 +1,26 @@
-@import "../variables";
+@import "../common/variables";
 
-.lvt-mission-wrapper {
+#lvt-mission-wrapper {
   width: 100%;
   overflow: hidden;
   h1 {
     line-height: 79px;
   }
-  p {
+  h6 {
     text-align: justify;
   }
+}
+.block-in-block {
+  align-items: center;
 }
 
 @media screen and (max-width: 1240px) {
   h1 {
     line-height: 52px !important;
   }
-  .lvt-mission-wrapper {
-    .block-content {
-      margin-top: 0px;
-    }
-  }
 }
 
 @media screen and (max-width: 1200px) {
-  .lvt-mission-wrapper {
-    img {
-      animation: none;
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -36,11 +29,17 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .lvt-mission-wrapper {
-    .block-content {
+  #lvt-mission-wrapper {
+    .block-in-block {
       flex-direction: column-reverse;
       & div:nth-child(1) {
         margin-top: 12px;
+      }
+    }
+    .block-content {
+      h1,
+      h2 {
+        text-align: center;
       }
     }
   }

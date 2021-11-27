@@ -1,45 +1,51 @@
-@import "../variables";
+@import "../common/variables";
 
-.block-post-wrapper {
+#block-post-wrapper {
   background-color: #005c9f;
 }
-.block-post {
-  .items {
-    margin-bottom: 30px;
-    & .item {
-      background-color: #fff;
-      border-radius: 20px;
-      justify-content: space-evenly;
-      .item-content {
-        min-height: 299px;
-      }
-    }
+.posts {
+  .row {
+    margin: 0;
   }
-}
-.block-post {
-  .items {
-    &:last-child {
-      margin-bottom: 0px;
+  & .post {
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    padding: 0;
+    overflow: hidden;
+    h5,
+    p {
+      font-weight: 500;
+      transition: all 0.25s ease-in-out;
+    }
+    .post-content {
+      padding: 16px;
+      min-height: 299px;
     }
   }
 }
 
-.block-post-wrapper {
+#block-post-wrapper {
   .block-content {
-    .items {
+    .posts {
       cursor: pointer;
       transition: all 0.25s ease-in-out;
     }
   }
 }
 
-.block-post-wrapper {
+#block-post-wrapper {
   .block-content {
-    .items:hover {
-      transform: translateY(-24px);
+    margin-top: 42px;
+  }
+  .post:hover {
+    h5,
+    p {
+      color: $dark-blue;
     }
-    .block-content {
-      margin-top: 42px;
+    figure::before {
+      -webkit-animation: shine 1s;
+      animation: shine 1s;
     }
   }
 }
@@ -54,51 +60,54 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .block-post-wrapper {
-    .item-content {
+  #block-post-wrapper {
+    .post-content {
       min-height: 335px !important;
     }
+  }
+  .post-content {
+    padding: 13px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .item-content {
-    min-height: 246px;
-  }
-  .block-post-wrapper {
+  #block-post-wrapper {
     .block-content {
-      .items:hover {
+      .posts:hover {
         transform: none;
       }
     }
-    .item-content {
+    .post-content {
       min-height: 206px !important;
     }
+  }
+  .post-content {
+    padding: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .item-content {
-    min-height: 180px !important;
-  }
-  .block-post-wrapper {
-    .item-content {
+  #block-post-wrapper {
+    .post-content {
       min-height: 168px !important;
     }
   }
+  .post-content {
+    padding: 8px;
+  }
 }
 @media screen and (max-width: 576px) {
-  .description {
+  .post-title-des {
     padding: 0 20px;
   }
-  .block-post-wrapper {
-    .item-content {
+  #block-post-wrapper {
+    .post-content {
       min-height: 136px !important;
     }
   }
 
-  .block-post {
-    h4 {
+  .post-content {
+    h5 {
       font-size: 16px;
     }
   }

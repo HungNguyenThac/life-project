@@ -1,0 +1,17 @@
+//carousel-image
+.owl-carousel .owl-item img {
+  width: auto;
+}
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: block;
+}
+.owl-carousel .owl-dots {
+  .owl-dot.active {
+    span {
+      width: 30px;
+      height: 10px;
+      background-color: white;
+    }
+  }
+}

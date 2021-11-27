@@ -1,4 +1,9 @@
-@import "variables";
+@import "./variables";
+.body {
+  font-family: $font-primary;
+  line-height: 1;
+  font-size: 16px;
+}
 
 .flex-row-center-center {
   display: flex;
@@ -102,6 +107,18 @@
   }
 }
 
+// block
+.block {
+  padding: 75px 0;
+  .block-title {
+    .description {
+    }
+  }
+  .block-content {
+    margin-top: 28px;
+  }
+}
+
 // columns 5
 .col-xs-5ths,
 .col-sm-5ths,
@@ -115,18 +132,6 @@
 .col-lg-5ths {
   width: 20%;
   float: left;
-}
-
-// block
-.block {
-  padding: 75px 0;
-  .block-title {
-    .description {
-    }
-  }
-  .block-content {
-    margin-top: 28px;
-  }
 }
 
 // style font-size
@@ -161,18 +166,22 @@ span {
   font-size: 24px;
   line-height: 150%;
   font-weight: 400;
+  color: $text-color;
 }
 
 h6 {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
+  color: $text-color;
 }
 
 p {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
+  color: $text-color;
+  text-align: justify;
 }
 
 @media screen and (max-width: 1700px) {
@@ -270,6 +279,9 @@ p {
       margin-top: 24px;
     }
   }
+  .arrow-image {
+    margin-top: 16px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -346,7 +358,7 @@ p {
 
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h2 {
@@ -379,5 +391,9 @@ p {
     .block-content {
       margin-top: 14px;
     }
+  }
+  .arrow-image {
+    margin-top: 12px;
+    width: 20px;
   }
 }

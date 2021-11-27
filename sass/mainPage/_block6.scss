@@ -1,13 +1,9 @@
-@import "../variables";
+@import "../common/variables";
 
-.experience-now-wrapper {
+#experience-now-wrapper {
   width: 100%;
   overflow: hidden;
-
-  .block-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+  h2 {
+    font-weight: 400;
   }
 }
