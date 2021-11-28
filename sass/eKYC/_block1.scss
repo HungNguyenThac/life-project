@@ -1,0 +1,31 @@
+@import "../common/variables";
+
+#eKYC-intro-wrapper {
+  width: 100%;
+
+  background-color: #1e34a2;
+  overflow: hidden;
+  .block {
+    padding-bottom: 0 !important;
+  }
+  h1 {
+    color: #82fffb;
+  }
+  h4 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 56.25px;
+    font-family: $font-primary;
+  }
+  h5 {
+    font-weight: 400;
+    font-family: $font-primary;
+  }
+}
+@media screen and (max-width: 576px) {
+  #eKYC-intro-wrapper {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}

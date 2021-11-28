@@ -1603,4 +1603,36 @@ figure::before {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: iCielSamsungSharp;
+  src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
+#eKYC-intro-wrapper {
+  width: 100%;
+  background-color: #1e34a2;
+  overflow: hidden;
+}
+#eKYC-intro-wrapper .block {
+  padding-bottom: 0 !important;
+}
+#eKYC-intro-wrapper h1 {
+  color: #82fffb;
+}
+#eKYC-intro-wrapper h4 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 56.25px;
+  font-family: "Roboto", sans-serif;
+}
+#eKYC-intro-wrapper h5 {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  #eKYC-intro-wrapper .row {
+    flex-direction: column-reverse;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
