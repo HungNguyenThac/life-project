@@ -18,6 +18,9 @@
 .block-eKYC {
   align-items: center;
   overflow: hidden;
+  & figure {
+    overflow: hidden;
+  }
 }
 
 .icon__body2 {

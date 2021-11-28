@@ -1,6 +1,6 @@
 @import "../common/variables";
 
-.block-intro-wrapper {
+#block-intro-wrapper {
   width: 100%;
   background: #043887;
   overflow: hidden;
@@ -122,7 +122,6 @@
         border: 2px solid $dark-blue;
       }
     }
-
     .btn-image {
       padding-left: 4px;
     }

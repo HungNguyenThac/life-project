@@ -27,7 +27,7 @@
     <!-- sass ./sass/app.scss ./css/app.css --watch -->
   </head>
   <body>
-    <div class="block-intro-wrapper">
+    <div id="block-intro-wrapper">
       <div class="container">
         <div class="block">
           <div class="block-content">
@@ -349,6 +349,7 @@
                       alt="banking-image"
                     />
                   </figure>
+
                   <div class="post-content">
                     <h5 class="text-grey">
                       Tích hợp dễ dàng, nhanh chóng, hỗ trợ đa nền tảng
@@ -582,14 +583,16 @@
                   Khởi tạo nền tảng Ngân hàng nhúng toàn diện, tối ưu cho doanh
                   nghiệp ngay!
                 </h2>
-                <button class="btn-experience-now">
-                  <span>Khởi tạo ngay</span>
-                  <img
-                    class="btn-image"
-                    srcset="./assets/images/mainPage/arrow-left.png 2x"
-                    alt="arrow-left"
-                  />
-                </button>
+                <div class="btn-experiece-now-wrapper">
+                  <button class="btn-experience-now">
+                    <span>Khởi tạo ngay</span>
+                    <img
+                      class="btn-image"
+                      srcset="./assets/images/mainPage/arrow-left.png 2x"
+                      alt="arrow-left"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
             <div class="block-image col-sm-4 col-6">
@@ -606,78 +609,74 @@
     <div id="footer">
       <div class="container">
         <div class="block">
-          <div class="block-title"></div>
-          <div class="block-content row gx-5 gy-1">
+          <div class="block-content row">
+            <!-- content left -->
             <div class="col-xl-5 col-sm-6 col-12 offset-xl-1">
-              <div class="row flex-column-center-start">
-                <h1 class="text-white col-12 text-uppercase">liên hệ</h1>
-                <h5 class="text-white col-12 text-uppercase">
-                  Công ty Cổ phần Phát triển Công nghệ Liên Việt
-                </h5>
-                <div class="col-12 mt-lg-4 mt-3 address">
-                  <img
-                    src="./assets/icon-svg/mapPin-footer.svg"
-                    alt="address-icon"
-                  />
-                  <h5 class="text ms-3">
-                    Tầng 3, Tòa nhà ThaiHoldings, 210 Trần Quang Khải, Q, Hoàn
-                    Kiếm, TP. Hà Nội
-                  </h5>
-                </div>
-                <div class="col-12 mt-lg-4 mt-3 mobile-phone">
-                  <img
-                    src="./assets/icon-svg/phone-footer.svg"
-                    alt="phone-icon"
-                  />
-                  <h5 class="text ms-3">024 3209 8686</h5>
-                </div>
-                <div class="col-12 mt-lg-4 mt-3 mail">
-                  <img
-                    src="./assets/icon-svg/mail-footer.svg"
-                    alt="mail-icon"
-                  />
-                  <h5 class="text ms-3">lienhe@lienviettech.com.vn</h5>
-                </div>
-                <div class="mt-lg-5 mt-3 col-12 block-map">
-                  <img
-                    class="w-100"
-                    srcset="./assets/images/footer/map.png 2x"
-                    alt="map"
-                  />
-                  <img
-                    class="location"
-                    src="./assets/icon-svg/location-footer.svg"
-                    alt="location"
-                  />
-                </div>
+              <h1 class="text-white text-uppercase">liên hệ</h1>
+              <h6 class="text-white text-uppercase">
+                Công ty Cổ phần Phát triển Công nghệ Liên Việt
+              </h6>
+              <div class="mt-lg-4 mt-3 contacts">
+                <img
+                  src="./assets/icon-svg/footer/mapPin-footer.svg"
+                  alt="address-icon"
+                />
+                <h6 class="text ms-3">
+                  Tầng 3, Tòa nhà ThaiHoldings, 210 Trần Quang Khải, Q, Hoàn
+                  Kiếm, TP. Hà Nội
+                </h6>
+              </div>
+              <div class="mt-lg-4 mt-3 contacts">
+                <img
+                  src="./assets/icon-svg/footer/phone-footer.svg"
+                  alt="phone-icon"
+                />
+                <h6 class="text ms-3">024 3209 8686</h6>
+              </div>
+              <div class="mt-lg-4 mt-3 contacts">
+                <img
+                  src="./assets/icon-svg/footer/mail-footer.svg"
+                  alt="mail-icon"
+                />
+                <h6 class="text ms-3">lienhe@lienviettech.com.vn</h6>
+              </div>
+              <div class="mt-lg-5 mt-3 block-map">
+                <img
+                  class="w-100"
+                  srcset="./assets/images/footer/map.png 2x"
+                  alt="map"
+                />
+                <img
+                  class="location"
+                  src="./assets/icon-svg/footer/location-footer.svg"
+                  alt="location"
+                />
               </div>
             </div>
+            <!-- content right -->
             <div class="col-xl-5 col-sm-6 col-12 offset-xl-1">
-              <div class="row">
+              <input
+                class="w-100 mt-md-3 mt-2 mt-lg-4"
+                type="text"
+                placeholder="Họ và tên *"
+              />
+              <div class="p-0 flex-row-center-center mt-md-3 mt-2">
+                <input class="email-form" type="text" placeholder="Email*" />
                 <input
-                  class="w-100 col-12 mt-md-3 mt-2 mt-lg-4"
+                  class="phone-form ms-sm-3 ms-1"
                   type="text"
-                  placeholder="Họ và tên *"
+                  placeholder="Điện thoại"
                 />
-
-                <div class="p-0 flex-row-center-center mt-md-3 mt-2">
-                  <input class="email-form" type="text" placeholder="Email*" />
-                  <input
-                    class="phone-form ms-sm-3 ms-1"
-                    type="text"
-                    placeholder="Điện thoại"
-                  />
-                </div>
-                <div class="p-0">
-                  <textarea
-                    class="w-100 mt-md-3 mt-2"
-                    type="text"
-                    placeholder="Nội dung Email*"
-                  ></textarea>
-                </div>
-                <div class="col-12 mt-md-3 mt-2 p-0">
-                  <button class="w-100 btn-send-infoUser">Gửi Email</button>
-                </div>
+              </div>
+              <div class="p-0">
+                <textarea
+                  class="w-100 mt-md-3 mt-2"
+                  type="text"
+                  placeholder="Nội dung Email*"
+                ></textarea>
+              </div>
+              <div class="mt-md-3 mt-2 p-0">
+                <button class="w-100 btn-send-infoUser">Gửi Email</button>
               </div>
             </div>
           </div>
@@ -686,9 +685,9 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-12 col-lg-7">
               <div class="row footer-bottom-left">
-                <div class="footer-logo col-3 col-xl-2 col-sm-2">
+                <div class="footer-logo col-lg-2 col-12">
                   <a href="#">
                     <img
                       class="logo-footer"
@@ -697,58 +696,94 @@
                     />
                   </a>
                 </div>
-                <div class="footer-menu col-12 col-xl-10 col-sm-10">
-                  <ul class="w-100">
-                    <li class="category">
-                      <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                      <a href="#">
-                        <h5 class="text ms-xxl-3 ms-lg-3 ms-2">Trang chủ</h5>
-                      </a>
-                    </li>
-                    <li class="category ms-xxl-3 ms-sm-1">
-                      <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                      <h5 class="text ms-xxl-3 ms-lg-3 ms-2">Giới thiệu</h5>
-                    </li>
-                    <li class="category ms-xxl-3 ms-sm-1">
-                      <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                      <h5 class="text ms-xxl-3 ms-lg-3 ms-2">Sản phẩm</h5>
-                    </li>
-                    <li class="category ms-xxl-3 ms-sm-1">
-                      <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                      <h5 class="text ms-xxl-3 ms-lg-3 ms-2">Khách hàng</h5>
-                    </li>
-                    <li class="category ms-xxl-3 ms-sm-1">
-                      <img src="./assets/icon-svg/dot-footer.svg" alt="dot" />
-                      <h5 class="text ms-xxl-3 ms-lg-3 ms-2">Liên hệ</h5>
-                    </li>
-                  </ul>
+                <div class="footer-menu col-lg-10 col-12">
+                  <li class="category">
+                    <img
+                      src="./assets/icon-svg/footer/dot-footer.svg"
+                      alt="dot"
+                    />
+                    <a href="https://lienviettech.com.vn/" target="_blank">
+                      <h6 class="text ms-lg-2">Trang chủ</h6>
+                    </a>
+                  </li>
+                  <li class="category ms-xxl-2 ms-lg-2 ms-sm-1">
+                    <img
+                      src="./assets/icon-svg/footer/dot-footer.svg"
+                      alt="dot"
+                    />
+                    <a href="#block-intro-wrapper">
+                      <h6 class="text ms-lg-2">Giới thiệu</h6>
+                    </a>
+                  </li>
+                  <li class="category ms-xxl-2 ms-lg-2 ms-sm-1">
+                    <img
+                      src="./assets/icon-svg/footer/dot-footer.svg"
+                      alt="dot"
+                    />
+                    <a href="#our-solution-wrapper">
+                      <h6 class="text ms-lg-2">Sản phẩm</h6>
+                    </a>
+                  </li>
+                  <li class="category ms-xxl-2 ms-lg-2 ms-sm-1">
+                    <img
+                      src="./assets/icon-svg/footer/dot-footer.svg"
+                      alt="dot"
+                    />
+                    <a href="#customers-wrapper">
+                      <h6 class="text ms-lg-2">Khách hàng</h6>
+                    </a>
+                  </li>
+                  <li class="category ms-xxl-2 ms-lg-2 ms-sm-1">
+                    <img
+                      src="./assets/icon-svg/footer/dot-footer.svg"
+                      alt="dot"
+                    />
+                    <a href="#footer">
+                      <h6 class="text ms-lg-2">Liên hệ</h6>
+                    </a>
+                  </li>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-5">
               <div class="row footer-bootom-right">
-                <div class="copyright col-12 col-sm-9">
-                  <h5>
+                <div class="copyright col-12 col-lg-9">
+                  <h6>
                     © Copyright
                     <script type="text/javascript">
                       const year = new Date();
                       document.write(year.getFullYear());
                     </script>
                     "Life Project", All rights reserved
-                  </h5>
+                  </h6>
                 </div>
-                <div class="btn-group dropup col-4 col-sm-3 mb-sm-1 mb-2">
+                <div class="btn-group dropup col-4 col-sm-3 col-lg-3">
                   <button
                     type="button"
                     class="btn-language dropdown-toggle"
                     data-bs-toggle="dropdown"
                   >
-                    <h5 style="display: inline-block">Vietnamese</h5>
+                    <h6 style="display: inline-block">Vietnamese</h6>
                   </button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-loading">
+      <div class="modal-loading-overlay">
+        <div class="loading-dots">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>

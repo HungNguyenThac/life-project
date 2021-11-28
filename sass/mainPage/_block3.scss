@@ -12,7 +12,7 @@
     border-radius: 20px;
     justify-content: space-evenly;
     padding: 0;
-    overflow: hidden;
+
     h5,
     p {
       font-weight: 500;
@@ -21,6 +21,9 @@
     .post-content {
       padding: 16px;
       min-height: 299px;
+    }
+    .post-image {
+      overflow: hidden;
     }
   }
 }

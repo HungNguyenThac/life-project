@@ -75,8 +75,10 @@ button {
   }
 }
 @media screen and (max-width: 576px) {
-  .btn-experience-now {
-    margin-left: 24px;
+  .btn-experiece-now-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @keyframes animationbutton {

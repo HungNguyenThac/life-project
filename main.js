@@ -1,8 +1,9 @@
+//owl carousel
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
   dots: true,
-  nav: true,
+  nav: false,
   dotsEach: true,
   autoplay: true,
   responsive:{
@@ -17,3 +18,18 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+
+
+//toggle modal send userInfo
+const handleClickBtnSendUserinfo = (e)=>{
+    e.preventDefault()
+    const modalLoading = document.querySelector(".modal-loading")
+    modalLoading.classList.add("active")
+
+    setTimeout(()=>{
+    modalLoading.classList.remove("active")
+    },2000)
+}
+
+let btnSendUserinfo = document.querySelector(".btn-send-infoUser")
+btnSendUserinfo.addEventListener("click", handleClickBtnSendUserinfo)

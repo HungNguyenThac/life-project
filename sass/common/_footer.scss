@@ -17,6 +17,10 @@
   textarea {
     min-height: 200px;
   }
+  .block-content {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .btn-send-infoUser {
@@ -29,17 +33,15 @@
   }
 }
 
-.mobile-phone,
-.address,
-.mail {
+.contacts {
   display: flex;
   align-items: center;
   cursor: pointer;
-  p {
+  h6 {
     transition: all 0.25s ease-in-out;
   }
   &:hover {
-    p {
+    h6 {
       color: $white-color;
     }
   }
@@ -58,6 +60,9 @@
   width: 50%;
 }
 
+//animation - input
+
+//footer-bottom
 .footer-bottom {
   background-color: #2f3443;
   padding: 20px 0;
@@ -72,21 +77,23 @@
       cursor: pointer;
     }
     .footer-menu {
-      & ul {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .category {
         display: flex;
         justify-content: center;
         align-items: center !important;
-        & h5 {
+        & h6 {
           white-space: nowrap;
           cursor: pointer;
           transition: all 0.25s ease-in-out;
-          color: white;
+        }
+        &:hover {
+          h6 {
+            color: $white-color;
+          }
         }
       }
     }
@@ -94,7 +101,7 @@
 }
 
 .copyright {
-  h5 {
+  h6 {
     cursor: pointer;
     transition: all 0.25s ease-in-out;
     color: $white-color;
@@ -129,23 +136,29 @@
   transition: all 0.25s ease-in-out;
   &:hover {
     background-color: $dark-blue;
-    color: $white-color;
+    h6 {
+      color: $white-color;
+    }
   }
 }
 
 @media screen and (max-width: 1200px) {
   .copyright,
   .category {
-    h5 {
+    h6 {
       font-size: 12px !important;
     }
   }
   .btn-language {
     width: 100%;
     padding: 4px 4px;
-    h5 {
+    h6 {
       font-size: 12px;
     }
+  }
+  .footer-menu {
+    display: flex;
+    justify-content: end !important;
   }
 }
 
@@ -163,6 +176,27 @@
   }
   .phone-form {
     width: 35%;
+  }
+  .btn-group.dropup,
+  .copyright,
+  .footer-menu,
+  .footer-logo {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .btn-group.dropup,
+  .copyright,
+  .footer-menu {
+    margin-top: 12px;
+    .category {
+      h6 {
+        padding-left: 24px;
+      }
+      img {
+        display: none;
+      }
+    }
   }
 }
 
@@ -190,7 +224,7 @@
     img {
       display: none;
     }
-    & h5 {
+    & h6 {
       color: $white-color;
     }
   }
@@ -202,9 +236,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .footer-menu {
-    flex-direction: column;
-  }
   .email-form,
   .phone-form {
     width: 50%;
@@ -214,6 +245,13 @@
   .btn-send-infoUser {
     padding: 6px 0 6px 10px !important;
     border-radius: 6px !important;
+  }
+  .footer-menu {
+    .category {
+      h6 {
+        padding-left: 12px;
+      }
+    }
   }
   .copyright {
     justify-content: center;
