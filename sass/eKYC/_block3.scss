@@ -1,0 +1,26 @@
+#our-technology-wrapper {
+  width: 100%;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  h1 {
+    line-height: 79.36px;
+    color: $grey-color;
+  }
+  h3 {
+    color: #1e34a2;
+  }
+  .technology-content {
+    &-right {
+      span {
+        color: #045387;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #our-technology-wrapper {
+    h1 {
+      text-align: center;
+    }
+  }
+}

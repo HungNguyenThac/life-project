@@ -1,0 +1,104 @@
+@import "../common/variables";
+
+.block-advantage {
+  margin-top: 140px;
+  margin-bottom: 60px;
+  .item {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+      transition: all 0.25s ease-in-out;
+      margin-top: 54px;
+    }
+    &:hover {
+      span {
+        color: $dark-blue;
+      }
+      .advantage-image {
+        cursor: pointer;
+        animation: jelly 0.5s;
+      }
+    }
+    .advantage-image {
+      z-index: 1;
+      color: white;
+      outline: none;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  .arrow-right {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .block-advantage {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    .item {
+      span {
+        margin-top: 46px;
+      }
+      .arrow-right {
+        margin-top: 32px;
+      }
+      .advantage-image {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-advantage {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    .item {
+      span {
+        margin-top: 36px;
+      }
+      .advantage-image {
+        width: 50%;
+      }
+      .arrow-right {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-advantage {
+    .item {
+      span {
+        font-size: 7px;
+        margin-top: 24px;
+      }
+      .advantage-image {
+        width: 40%;
+      }
+      .arrow-right {
+        width: 16%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .block-advantage {
+    .item {
+      span {
+        font-size: 7px;
+      }
+      .advantage-image {
+        width: 40%;
+      }
+      .arrow-right {
+        width: 24%;
+        margin-top: 12px;
+      }
+    }
+  }
+}
