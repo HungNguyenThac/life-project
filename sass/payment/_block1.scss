@@ -1,0 +1,18 @@
+@import "../common/variables";
+
+#payment-intro-wrapper {
+  background: #7534a2;
+  overflow: hidden;
+  width: 100%;
+  .block {
+    padding-bottom: 0 !important;
+  }
+  h1 {
+    color: #ffa0a0;
+  }
+  h5 {
+    color: $white-color;
+  }
+  .block-content {
+  }
+}
