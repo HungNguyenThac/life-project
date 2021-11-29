@@ -46,7 +46,7 @@
       }
     }
   }
-  .block-solution:last-child {
+  .block-solution-lastchild {
     &::after {
       content: "";
       width: 100%;
@@ -54,6 +54,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      z-index: 1;
       background-image: linear-gradient(
         to right,
         rgba(255, 255, 255, 1),

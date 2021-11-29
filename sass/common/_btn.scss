@@ -22,6 +22,7 @@ button {
     padding-left: 12px;
   }
   span {
+    text-transform: uppercase;
     color: $white-color;
   }
   &:hover {
@@ -86,6 +87,7 @@ button {
     }
   }
 }
+
 @keyframes animationbutton {
   0% {
     scale: 1;
@@ -93,7 +95,7 @@ button {
 
   100% {
     transform-origin: center;
-    transform: scale(1.45);
+    transform: scale(1.2, 2);
     opacity: 0;
   }
 }

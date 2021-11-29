@@ -890,6 +890,7 @@ button {
   padding-left: 12px;
 }
 .btn-experience-now span {
+  text-transform: uppercase;
   color: #ffffff;
 }
 .btn-experience-now:hover {
@@ -950,7 +951,7 @@ button {
   }
   100% {
     transform-origin: center;
-    transform: scale(1.45);
+    transform: scale(1.2, 2);
     opacity: 0;
   }
 }
@@ -1866,13 +1867,14 @@ figure::before {
 #other-solutions-of-Gaia .block-solution:hover > h5 {
   color: #092d8e !important;
 }
-#other-solutions-of-Gaia .block-solution:last-child::after {
+#other-solutions-of-Gaia .block-solution-lastchild::after {
   content: "";
   width: 100%;
   height: 1px;
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
   background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0));
 }
 
@@ -1904,6 +1906,24 @@ figure::before {
     width: 50% !important;
   }
 }
+@font-face {
+  font-family: iCielSamsungSharp;
+  src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
+.experience-now-payment {
+  background-color: #0f3cb1;
+}
+.experience-now-payment::before {
+  border: 4px solid #0f3cb1;
+}
+.experience-now-payment:hover {
+  background-color: #0f3cb1;
+  opacity: 0.6;
+}
+.experience-now-payment:hover::before {
+  border: 4px solid #0f3cb1;
+}
+
 @font-face {
   font-family: iCielSamsungSharp;
   src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
@@ -2069,10 +2089,9 @@ figure::before {
   margin-top: 46px;
 }
 #connection-wrapper .block-advantage .item {
-  min-height: 382px;
+  min-height: 400px;
 }
 #connection-wrapper .block-advantage .item .image-wrapper {
-  margin-top: 46px;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -2148,6 +2167,19 @@ figure::before {
 @font-face {
   font-family: iCielSamsungSharp;
   src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
+.experience-now-payment {
+  background-color: #7534a2;
+}
+.experience-now-payment::before {
+  border: 4px solid #7534a2;
+}
+.experience-now-payment:hover {
+  background-color: #7534a2;
+  opacity: 0.6;
+}
+.experience-now-payment:hover::before {
+  border: 4px solid #7534a2;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,1 +1,15 @@
 @import "../common/variables";
+.experience-now-payment {
+  background-color: #7534a2;
+  &::before {
+    border: 4px solid #7534a2;
+  }
+  &:hover {
+    background-color: #7534a2;
+
+    opacity: 0.6;
+    &::before {
+      border: 4px solid #7534a2;
+    }
+  }
+}
