@@ -2,13 +2,15 @@
   margin-top: 140px;
   margin-bottom: 60px;
   align-items: center;
+
   .item {
     display: flex;
     cursor: pointer;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     box-shadow: none;
+    padding: 12px;
     border-radius: 10px;
     transition: all 0.25s ease-in-out;
     span {
@@ -93,13 +95,13 @@
   .block-advantage {
     .item {
       span {
-        font-size: 7px;
+        font-size: 9px;
       }
       .advantage-image {
         width: 40%;
       }
       .arrow-right {
-        width: 24%;
+        width: 12%;
         margin-top: 12px;
       }
     }

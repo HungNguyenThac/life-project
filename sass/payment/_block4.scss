@@ -1,1 +1,95 @@
 @import "../common/variables";
+#connection-wrapper {
+  .block-advantage {
+    margin-top: 46px;
+    .item {
+      min-height: 382px;
+      .image-wrapper {
+        margin-top: 46px;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        border: 1px solid #e5e5e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      & > h3 {
+        color: $grey-color;
+        margin-top: 34px;
+      }
+      h3,
+      p {
+        transition: all 0.25s ease-in-out;
+        text-align: center;
+      }
+
+      &:hover {
+        h3,
+        p {
+          color: #7534a2;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  #connection-wrapper {
+    .block-advantage {
+      .item {
+        min-height: 282px;
+        .image-wrapper {
+          margin-top: 0px;
+          width: 160px;
+          height: 160px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #connection-wrapper {
+    .block-advantage {
+      margin-top: 16px;
+      .item {
+        min-height: 239px;
+        .image-wrapper {
+          width: 124px;
+          height: 124px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #connection-wrapper {
+    .block-advantage {
+      .item {
+        min-height: 214px;
+        .image-wrapper {
+          width: 96px;
+          height: 96px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #connection-wrapper {
+    .block-advantage {
+      .item {
+        min-height: 188px;
+        .image-wrapper {
+          width: 96px;
+          height: 96px;
+          .advantage-image {
+            width: 34%;
+          }
+        }
+        & > h3 {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

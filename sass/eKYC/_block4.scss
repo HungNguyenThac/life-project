@@ -1,10 +1,20 @@
+@import "../common/variables";
 #identification-process-wrapper {
   width: 100%;
   background-color: transparent;
   overflow: hidden;
+
   .block-advantage {
-    p {
-      text-align: center;
+    .item {
+      p {
+        text-align: center;
+        transition: all 0.25s ease-in-out;
+      }
+      &:hover {
+        p {
+          color: $dark-blue;
+        }
+      }
     }
   }
 }

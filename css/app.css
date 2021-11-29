@@ -254,14 +254,15 @@ table {
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
-.col-lg-5ths {
+.col-lg-5ths,
+.col-xl-5ths {
   position: relative;
   min-height: 1px;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.col-lg-5ths {
+.col-xl-5ths {
   width: 20%;
   float: left;
 }
@@ -405,7 +406,7 @@ span {
     font-size: 14px;
   }
 
-  .col-md-5ths {
+  .col-lg-5ths {
     width: 20%;
     float: left;
   }
@@ -451,7 +452,7 @@ span {
     font-size: 14px;
   }
 
-  .col-sm-5ths {
+  .col-md-5ths {
     width: 20%;
     float: left;
   }
@@ -493,7 +494,7 @@ span {
     margin-top: 18px;
   }
 
-  .col-xs-5ths {
+  .col-sm-5ths {
     width: 20%;
     float: left;
   }
@@ -549,6 +550,11 @@ span {
   .arrow-image {
     margin-top: 12px;
     width: 20px;
+  }
+
+  .col-xs-5ths {
+    width: 50%;
+    float: left;
   }
 }
 @font-face {
@@ -1080,9 +1086,9 @@ figure::before {
   display: flex;
   cursor: pointer;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-shadow: none;
+  padding: 12px;
   border-radius: 10px;
   transition: all 0.25s ease-in-out;
 }
@@ -1155,13 +1161,13 @@ figure::before {
 }
 @media screen and (max-width: 576px) {
   .block-advantage .item span {
-    font-size: 7px;
+    font-size: 9px;
   }
   .block-advantage .item .advantage-image {
     width: 40%;
   }
   .block-advantage .item .arrow-right {
-    width: 24%;
+    width: 12%;
     margin-top: 12px;
   }
 }
@@ -1799,13 +1805,21 @@ figure::before {
     flex-direction: column-reverse;
   }
 }
+@font-face {
+  font-family: iCielSamsungSharp;
+  src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
 #identification-process-wrapper {
   width: 100%;
   background-color: transparent;
   overflow: hidden;
 }
-#identification-process-wrapper .block-advantage p {
+#identification-process-wrapper .block-advantage .item p {
   text-align: center;
+  transition: all 0.25s ease-in-out;
+}
+#identification-process-wrapper .block-advantage .item:hover p {
+  color: #092d8e;
 }
 
 @font-face {
@@ -1917,14 +1931,215 @@ figure::before {
   overflow: hidden;
   width: 100%;
 }
+#exceptional-features-wrapper .block-advantage {
+  margin-top: 46px;
+  margin-bottom: 0px;
+}
+#exceptional-features-wrapper .block-advantage > .item {
+  min-height: 381px;
+}
 
-@font-face {
-  font-family: iCielSamsungSharp;
-  src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+@media screen and (max-width: 1200px) {
+  #exceptional-features-wrapper .block-advantage > .item {
+    min-height: 235px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #exceptional-features-wrapper .block-advantage > .item {
+    min-height: auto;
+  }
 }
 @font-face {
   font-family: iCielSamsungSharp;
   src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
+#advantage-for-business {
+  background: #f4f4f4;
+  overflow: hidden;
+  width: 100%;
+}
+#advantage-for-business .image-wrapper {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background-color: #7534a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#advantage-for-business .block-advantage {
+  margin-top: 46px;
+  margin-bottom: 0px;
+}
+#advantage-for-business .block-advantage > .item {
+  min-height: 314px;
+}
+#advantage-for-business .block-advantage > .item > h3 {
+  margin-top: 24px;
+  color: #7534a2;
+  line-height: 42.19px;
+  text-align: center;
+}
+#advantage-for-business .block-advantage > .item > p {
+  margin-top: 24px;
+  text-align: center;
+  max-width: 394px;
+  transition: all 0.25s ease-in-out;
+}
+#advantage-for-business .block-advantage > .item:hover > p {
+  color: #7534a2;
+}
+
+@media screen and (max-width: 1200px) {
+  #advantage-for-business .image-wrapper {
+    width: 84px;
+    height: 84px;
+  }
+  #advantage-for-business .block-advantage > .item {
+    min-height: 299px;
+  }
+  #advantage-for-business .block-advantage > .item > h3 {
+    margin-top: 12px;
+  }
+  #advantage-for-business .block-advantage > .item > p {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #advantage-for-business .image-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+  #advantage-for-business .block-advantage {
+    margin-top: 16px;
+  }
+  #advantage-for-business .block-advantage > .item {
+    min-height: 227.19px;
+  }
+  #advantage-for-business .block-advantage > .item > h3 {
+    margin-top: 8px;
+  }
+  #advantage-for-business .block-advantage > .item > p {
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #advantage-for-business .image-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+  #advantage-for-business .block-advantage {
+    margin-top: 16px;
+  }
+  #advantage-for-business .block-advantage > .item {
+    min-height: 242.19px;
+  }
+  #advantage-for-business .block-advantage > .item > h3 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  #advantage-for-business .block-advantage > .item > p {
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #advantage-for-business .image-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+  #advantage-for-business .block-advantage {
+    margin-top: 16px;
+  }
+  #advantage-for-business .block-advantage > .item {
+    min-height: 212.19px;
+  }
+  #advantage-for-business .block-advantage > .item > h3 {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  #advantage-for-business .block-advantage > .item > p {
+    margin-top: 8px;
+  }
+}
+@font-face {
+  font-family: iCielSamsungSharp;
+  src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
+}
+#connection-wrapper .block-advantage {
+  margin-top: 46px;
+}
+#connection-wrapper .block-advantage .item {
+  min-height: 382px;
+}
+#connection-wrapper .block-advantage .item .image-wrapper {
+  margin-top: 46px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#connection-wrapper .block-advantage .item > h3 {
+  color: #454545;
+  margin-top: 34px;
+}
+#connection-wrapper .block-advantage .item h3,
+#connection-wrapper .block-advantage .item p {
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+#connection-wrapper .block-advantage .item:hover h3,
+#connection-wrapper .block-advantage .item:hover p {
+  color: #7534a2;
+}
+
+@media screen and (max-width: 1200px) {
+  #connection-wrapper .block-advantage .item {
+    min-height: 282px;
+  }
+  #connection-wrapper .block-advantage .item .image-wrapper {
+    margin-top: 0px;
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #connection-wrapper .block-advantage {
+    margin-top: 16px;
+  }
+  #connection-wrapper .block-advantage .item {
+    min-height: 239px;
+  }
+  #connection-wrapper .block-advantage .item .image-wrapper {
+    width: 124px;
+    height: 124px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #connection-wrapper .block-advantage .item {
+    min-height: 214px;
+  }
+  #connection-wrapper .block-advantage .item .image-wrapper {
+    width: 96px;
+    height: 96px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #connection-wrapper .block-advantage .item {
+    min-height: 188px;
+  }
+  #connection-wrapper .block-advantage .item .image-wrapper {
+    width: 96px;
+    height: 96px;
+  }
+  #connection-wrapper .block-advantage .item .image-wrapper .advantage-image {
+    width: 34%;
+  }
+  #connection-wrapper .block-advantage .item > h3 {
+    margin-top: 20px;
+  }
 }
 @font-face {
   font-family: iCielSamsungSharp;

@@ -3,4 +3,29 @@
   background: transparent;
   overflow: hidden;
   width: 100%;
+  .block-advantage {
+    margin-top: 46px;
+    margin-bottom: 0px;
+    & > .item {
+      min-height: 381px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  #exceptional-features-wrapper {
+    .block-advantage {
+      & > .item {
+        min-height: 235px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #exceptional-features-wrapper {
+    .block-advantage {
+      & > .item {
+        min-height: auto;
+      }
+    }
+  }
 }
