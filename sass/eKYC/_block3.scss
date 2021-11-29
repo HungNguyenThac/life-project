@@ -22,5 +22,8 @@
     h1 {
       text-align: center;
     }
+    .block-content > .row {
+      flex-direction: column-reverse;
+    }
   }
 }

@@ -5,5 +5,20 @@
   overflow: hidden;
   h2 {
     font-weight: 400;
+    color: $text-color;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #experience-now-wrapper {
+    .block-image {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      & > img {
+        width: 50% !important;
+      }
+    }
   }
 }

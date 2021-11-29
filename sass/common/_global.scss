@@ -117,6 +117,13 @@
   .block-content {
     margin-top: 28px;
   }
+  .block-image {
+    display: flex;
+    justify-content: center;
+    & > img {
+      width: 50% !important;
+    }
+  }
 }
 
 // columns 5
@@ -390,6 +397,12 @@ p {
     padding: 28px 0;
     .block-content {
       margin-top: 14px;
+    }
+    .block-image {
+      margin-top: 12px;
+      & > img {
+        width: 50% !important;
+      }
     }
   }
   .arrow-image {

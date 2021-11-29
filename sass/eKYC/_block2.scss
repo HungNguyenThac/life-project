@@ -1,4 +1,9 @@
 @import "../common/variables";
+#outstanding-advantage-wrapper {
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
 
 .block-advantage {
   margin-top: 140px;
@@ -9,11 +14,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: none;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
     span {
       transition: all 0.25s ease-in-out;
       margin-top: 54px;
     }
     &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       span {
         color: $dark-blue;
       }

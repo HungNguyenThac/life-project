@@ -79,6 +79,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    .btn-experience-now {
+      // &::before {
+      //   animation: none;
+      // }
+    }
   }
 }
 @keyframes animationbutton {

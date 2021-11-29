@@ -1,0 +1,97 @@
+@import "../common/variables";
+#other-solutions-of-Gaia {
+  width: 100%;
+  background-color: #45a083;
+  overflow: hidden;
+
+  h1 {
+    line-height: 79.36px;
+    color: $white-color;
+  }
+  .block-solution {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+    h5 {
+      margin-left: 16px;
+      color: $white-color;
+      transition: all 0.35s ease-in-out;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+      );
+    }
+    & > img {
+      margin-left: 0;
+      transition: all 0.35s ease-in-out;
+    }
+    &:hover {
+      & > img {
+        margin-left: 26px;
+      }
+      & > h5 {
+        color: $dark-blue !important;
+      }
+    }
+  }
+  .block-solution:last-child {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+      );
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #other-solutions-of-Gaia {
+    .block-solution {
+      padding: 12px 0;
+      & > img {
+        width: 4%;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #other-solutions-of-Gaia {
+    h1 {
+      font-size: 18px !important;
+    }
+    .block-solution {
+      padding: 8px 0;
+      & > img {
+        width: 3%;
+      }
+    }
+    .block-image {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      & > img {
+        width: 50% !important;
+      }
+    }
+  }
+}
