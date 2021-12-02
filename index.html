@@ -27,6 +27,41 @@
     <!-- sass ./sass/app.scss ./css/app.css --watch -->
   </head>
   <body>
+    <div id="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-3 col-sm-2">
+            <div class="header-logo">
+              <img
+                class="w-100"
+                srcset="./assets/images/header/header-logo.png 2x"
+                alt="logo-image"
+              />
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="block-menu">
+              <h5>Menu</h5>
+              <div class="menu">
+                <svg
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="3" cy="3" r="3" fill="white" />
+                  <circle cx="3" cy="19" r="3" fill="white" />
+                  <circle cx="18" cy="3" r="3" fill="white" />
+                  <circle cx="18" cy="19" r="3" fill="white" />
+                  <circle cx="10" cy="11" r="2" fill="white" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="payment-intro-wrapper">
       <div class="container">
         <div class="block">
@@ -567,7 +602,6 @@
         </div>
       </div>
     </div>
-
     <div class="modal-loading">
       <div class="modal-loading-overlay">
         <div class="loading-dots">
@@ -1134,7 +1168,7 @@
         <div class="block">
           <div class="row align-items-center">
             <div class="block-content offset-sm-1 col-sm-6 col-12">
-              <div class="text-center">
+              <div>
                 <h2>
                   Khởi tạo nền tảng
                   <quote style="color: #055287"> Ngân hàng nhúng </quote>toàn

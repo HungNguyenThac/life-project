@@ -76,6 +76,19 @@ button {
   }
 }
 @media screen and (max-width: 576px) {
+  #experience-now-wrapper {
+    .container {
+      .block {
+        .row {
+          .block-content {
+            & > div {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
   .btn-experiece-now-wrapper {
     display: flex;
     justify-content: center;

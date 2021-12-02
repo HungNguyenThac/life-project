@@ -565,42 +565,140 @@ span {
   font-family: iCielSamsungSharp;
   src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
 }
-.header {
-  padding: 48px 0px 0 0px;
+#header {
+  position: fixed;
+  padding: 16px 68px 16px 68px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+#header .header-logo {
+  width: 75%;
+  cursor: pointer;
+}
+#header .block-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-}
-.header__logo {
-  z-index: 9999;
   cursor: pointer;
 }
-.header__menu {
-  z-index: 9999;
-  cursor: pointer;
+#header .block-menu > h5 {
+  color: white;
+  transition: all 0.25s ease-in-out;
 }
-.header__menu path {
-  transition: all 0.2s linear;
+#header .block-menu > .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 12px;
+  margin-left: 24px;
 }
-.header__menu circle:nth-child(3),
-.header__menu circle:nth-child(4),
-.header__menu circle:nth-child(5),
-.header__menu circle:nth-child(6),
-.header__menu circle:nth-child(7) {
-  transition: all 0.2s linear;
+#header .block-menu > .menu > svg > circle {
+  transition: all 0.25s ease-in-out;
 }
-.header__menu:hover path {
+#header .block-menu:hover .menu {
+  border: 2px solid #02b0e7;
+}
+#header .block-menu:hover .menu > svg > circle {
   fill: #02b0e7;
 }
-.header__menu:hover circle:nth-child(3),
-.header__menu:hover circle:nth-child(4),
-.header__menu:hover circle:nth-child(5),
-.header__menu:hover circle:nth-child(6),
-.header__menu:hover circle:nth-child(7) {
-  fill: #02b0e7;
-  stroke: #02b0e7;
+#header .block-menu:hover > h5 {
+  color: #02b0e7;
 }
 
+.block-menu.active .menu {
+  border: 2px solid #02b0e7;
+}
+.block-menu.active .menu > svg > circle {
+  fill: #02b0e7;
+}
+.block-menu.active > h5 {
+  color: #02b0e7;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    padding: 12px 24px 12px 24px;
+    width: 100%;
+  }
+  #header .block-menu > .menu {
+    padding: 8px;
+    margin-left: 10px;
+  }
+  #header .block-menu > .menu > svg {
+    width: 14px;
+    height: 14px;
+  }
+  #header .block-menu > .menu > svg > circle {
+    transition: all 0.25s ease-in-out;
+  }
+}
+@media screen and (max-width: 992px) {
+  #header {
+    padding: 9px 12px 9px 12px;
+    width: 100%;
+  }
+  #header .header-logo {
+    width: 86%;
+  }
+  #header .block-menu > .menu {
+    padding: 8px;
+    margin-left: 12px;
+  }
+  #header .block-menu > .menu > svg {
+    width: 16px;
+    height: 16px;
+  }
+  #header .block-menu > .menu > svg > circle {
+    transition: all 0.25s ease-in-out;
+  }
+  #header .block-menu.active .menu {
+    border: 1px solid #02b0e7;
+  }
+}
+@media screen and (max-width: 768px) {
+  #header {
+    width: 100%;
+  }
+  #header .header-logo {
+    width: 100%;
+  }
+  #header .block-menu > .menu {
+    border: 1px solid white;
+    padding: 8px;
+    margin-left: 12px;
+  }
+  #header .block-menu > .menu > svg {
+    width: 12px;
+    height: 12px;
+  }
+  #header .block-menu > .menu > svg > circle {
+    transition: all 0.25s ease-in-out;
+  }
+  #header .block-menu:hover .menu {
+    border: 1px solid #02b0e7;
+  }
+}
+@media screen and (max-width: 576px) {
+  #header {
+    padding: 8px 0 0 0;
+    width: 100%;
+  }
+  #header .block-menu > .menu {
+    border: 1px solid white;
+    padding: 4px;
+    margin-left: 8px;
+  }
+  #header .block-menu > .menu > svg {
+    width: 9px;
+    height: 9px;
+  }
+  #header .block-menu > .menu > svg > circle {
+    transition: all 0.25s ease-in-out;
+  }
+}
 @font-face {
   font-family: iCielSamsungSharp;
   src: url(../assets/font/iCiel-SamsungSharpSans-Bold.ttf);
@@ -939,6 +1037,10 @@ button {
   }
 }
 @media screen and (max-width: 576px) {
+  #experience-now-wrapper .container .block .row .block-content > div {
+    text-align: center;
+  }
+
   .btn-experiece-now-wrapper {
     display: flex;
     justify-content: center;
